@@ -1,32 +1,29 @@
-<form action="/login" id="login" class="form-signin" name="loginForm" method="POST">
+<#import "/spring.ftl" as spring />
 
-    <#if loginAuthentication?has_content>
-    <div class="animate-details" id="LoginFormDetails">
-        <#else>
-        <div class="" id="LoginFormDetails">
-            </#if>
-            <h1 class="h3 mb-3 font-weight-normal">Control Panel</h1>
+<html lang="en"><head>
+    <#include "partials/head.ftlh">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <link rel="stylesheet" href="/styles/login.css">
 
-            <input type="text" class="form-control" name="username" id="username" placeholder="Username" autofocus>
+    <title>Signin Template for Bootstrap</title>
 
-            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
 
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+    <style data-styled-components=""></style></head>
 
+<body class="text-center" ">
 
-            <div class="checkbox mb-3">
-                <#if loginAuthentication?has_content>
-                    <#if
-                    loginAuthentication == "fail">
-                    </#if>
-                    <div><p class="error"> No user found with the given credentials. <br>Please try again!</p></div>
-                </#if>
-            </div>
-            <div style="margin-top: 30px;">
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            </div>
-            <p class="mt-5 mb-3">© 2019-2020</p>
-        </div>
-</form>
+<#include "forms/loginForm.ftlh" />
 
 
+<#include "partials/scripts.ftlh">
+<script src="/scripts/loginValidation.js"></script>
+
+</body>
+</html>
