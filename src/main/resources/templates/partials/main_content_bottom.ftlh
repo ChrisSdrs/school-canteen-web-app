@@ -1,6 +1,6 @@
 
-<#--        </main>-->
-<#--    </div>-->
-<#--</div>-->
-<#--<!-- Alerts &ndash;&gt;-->
-<#--<#include "../partials/alerts.ftlh" />-->
+        </main>
+    </div>
+</div>
+<!-- Alerts -->
+<#include "../partials/alerts.ftlh" />

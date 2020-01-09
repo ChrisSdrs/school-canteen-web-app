@@ -34,6 +34,7 @@ public class UserServiceImpl implements UserService {
         originalUser.setAddress(userModel.getAddress());
         originalUser.setEmail(userModel.getEmail());
         originalUser.setLastName(userModel.getLastName());
+        originalUser.setGrade(userModel.getGrade());
         originalUser.setPhone(userModel.getPhone());
         originalUser.setRegn(userModel.getRegn());
         originalUser.setRole(userModel.getRole());
@@ -74,6 +75,14 @@ public class UserServiceImpl implements UserService {
                 .map(user -> mapper.mapToUserModel(user))
                 .collect(Collectors.toList());    }
 
+@Override
+    public List<UserModel> findByGrade(String grade) {
+        return userRepository
+                .findByGrade(grade)
+                .stream()
+                .map(user -> mapper.mapToUserModel(user))
+                .collect(Collectors.toList());    }
+
     @Override
     public List<UserModel> findByRegnAndEmail(String regn, String email) {
         return userRepository
@@ -109,8 +118,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<UserModel> findBySsnOrEmailOrUsername(String regn, String email, String username) {
+    public Optional<UserModel> findByRegnOrEmailOrUsername(String regn, String email, String username) {
         return userRepository.findByRegnOrEmailOrUsername(regn, email, username)
                 .map(user -> mapper.mapToUserModel(user));
     }
+
+    @Override
+    public List<UserModel> findByGradeAndEmail(String grade, String email) {
+        return userRepository
+                .findByGradeAndEmail(grade, email)
+                .stream()
+                .map(user -> mapper.mapToUserModel(user))
+                .collect(Collectors.toList());    }
 }

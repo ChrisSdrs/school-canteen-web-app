@@ -46,26 +46,26 @@ public class UserSearchController {
             model.addAttribute(ERROR_MESSAGE, "an error occurred");
             return "pages/users_search";
         }
-        String regn = userSearchForm.getRegn();
+        String grade = userSearchForm.getGrade();
         String email = userSearchForm.getEmail();
 
 
-        List<UserModel> users = getUsersFromSearch(regn, email);
+        List<UserModel> users = getUsersFromSearch(grade, email);
         model.addAttribute(USER_LIST, users);
         model.addAttribute(USER_SEARCH_FORM, userSearchForm);
         return "pages/users_search_results";
     }
 
-    private List<UserModel> getUsersFromSearch(String regn, String email){
-        if (regn != "" && email != ""){
+    private List<UserModel> getUsersFromSearch(String grade, String email){
+        if (grade != "" && email != ""){
 
-            return userService.findByRegnAndEmail(regn, email);
+            return userService.findByGradeAndEmail(grade, email);
 
-        }else if (regn != "" && email == ""){
+        }else if (grade != "" && email == ""){
 
-            return userService.findByRegn(regn);
+            return userService.findByGrade(grade);
 
-        }else if (regn == "" && email != ""){
+        }else if (grade == "" && email != ""){
 
             return userService.findByEmail(email);
 

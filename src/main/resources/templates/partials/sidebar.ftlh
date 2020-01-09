@@ -34,7 +34,7 @@
                     <a class="nav-link" href="/admin/users">
                         <img src="https://img.icons8.com/ios-filled/50/000000/user-group-man-man.png" class="nav-link-icon">
 
-                        <div class="sidebar-link-text">All Students</div>
+                        <div class="sidebar-link-text">All Owners</div>
                     </a>
                 </li>
 
@@ -44,7 +44,7 @@
                 page == "User-Edit"><li class="nav-item nav-users active">
                         <div class="nav-link" >
                             <img src="https://img.icons8.com/ios-filled/50/000000/pencil-tip.png" class="nav-link-icon">
-                            <div class="sidebar-link-text">Edit Student</div>
+                            <div class="sidebar-link-text">Edit Owner</div>
                         </div>
                     </li>
                     </#if>
@@ -61,7 +61,7 @@
                 ">
                     <a class="nav-link" href="/admin/users/search">
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/find-user-male.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Search for Students</div>
+                        <div class="sidebar-link-text">Search for Owners</div>
                     </a>
                 </li>
 
@@ -79,7 +79,7 @@
                 </li>
 
                 <li class="">
-                    <div class="sidebar-title">Products</div>
+                    <div class="sidebar-title">Repairs</div>
                 </li>
 
                 <li class="nav-item

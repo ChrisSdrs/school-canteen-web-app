@@ -99,13 +99,14 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
 
             String firstName = user.getFirstName();
             String lastName = user.getLastName();
+            String grade = user.getGrade();
             String address = user.getAddress();
             String phone = user.getPhone();
             String email = user.getEmail();
             String username = user.getUsername();
             String password = user.getPassword();
             String role = user.getRole();
-            if (regn.isEmpty() || email.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || address.isEmpty() || phone.isEmpty() || username.isEmpty() || password == null || role.isEmpty()){
+            if (regn.isEmpty() || email.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || grade.isEmpty() || address.isEmpty() || phone.isEmpty() || username.isEmpty() || password == null || role.isEmpty()){
                 isValid = false;
             }
 

@@ -6,6 +6,7 @@ public class UserModel {
     private String regn;
     private String firstName;
     private String lastName;
+    private String grade;
     private String address;
     private String phone;
     private String email;
@@ -40,9 +41,11 @@ public class UserModel {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    public void setLastName(String lastName) { this.lastName = lastName; }
+
+    public String getGrade() { return grade; }
+
+    public void setGrade(String grade) { this.grade = grade; }
 
     public String getAddress() {
         return address;
@@ -88,11 +91,12 @@ public class UserModel {
 
     }
 
-    public UserModel(Long id, String regn, String firstName, String lastName, String address, String phone, String email, String username, String role) {
+    public UserModel(Long id, String regn, String firstName, String lastName, String grade, String address, String phone, String email, String username, String role) {
         this.id = id;
         this.regn = regn;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.grade = grade;
         this.address = address;
         this.phone = phone;
         this.email = email;
@@ -107,6 +111,7 @@ public class UserModel {
                 ", regn='" + regn + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", grade='" + grade + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +

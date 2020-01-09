@@ -8,6 +8,8 @@ public class UserEditForm {
 
     private String lastName;
 
+   private String grade;
+
     private String address;
 
     private String phone;
@@ -42,6 +44,10 @@ public class UserEditForm {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getGrade() { return grade; }
+
+    public void setGrade(String grade) { this.grade = grade; }
 
     public String getAddress() {
         return address;
@@ -86,10 +92,11 @@ public class UserEditForm {
     public UserEditForm() {
     }
 
-    public UserEditForm(String regn, String firstName, String lastName, String address, String phone, String email, String username, String role) {
+    public UserEditForm(String regn, String firstName, String lastName, String grade, String address, String phone, String email, String username, String role) {
         this.regn = regn;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.grade = grade;
         this.address = address;
         this.phone = phone;
         this.email = email;

@@ -14,6 +14,7 @@ public class UserToUserModelMapper {
         userModel.setRegn(users.getRegn());
         userModel.setFirstName(users.getFirstName());
         userModel.setLastName(users.getLastName());
+        userModel.setGrade(users.getGrade());
         userModel.setPhone(users.getPhone());
         userModel.setEmail(users.getEmail());
         userModel.setAddress(users.getAddress());

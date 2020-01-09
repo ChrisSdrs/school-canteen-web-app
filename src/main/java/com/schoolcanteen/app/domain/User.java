@@ -19,6 +19,9 @@ public class User {
     @Column(name = "user_last_name")
     private String lastName;
 
+     @Column(name = "user_grade")
+    private String grade;
+
     @Column(name = "user_address")
     private String address;
 
@@ -41,11 +44,12 @@ public class User {
 
     }
 
-    public User(Long id, String regn, String firstName, String lastName, String address, String phone, String email, String username, String password, String role) {
+    public User(Long id, String regn, String firstName, String lastName, String grade, String address, String phone, String email, String username, String password, String role) {
         this.id = id;
         this.regn = regn;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.grade = grade;
         this.address = address;
         this.phone = phone;
         this.email = email;
@@ -82,9 +86,11 @@ public class User {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    public void setLastName(String lastName) { this.lastName = lastName; }
+
+    public String getGrade() { return grade; }
+
+    public void setGrade(String grade) { this.grade = grade; }
 
     public String getAddress() {
         return address;
@@ -142,6 +148,7 @@ public class User {
         sb.append(", regn='").append(regn);
         sb.append(", name='").append(firstName);
         sb.append(", lastname=").append(lastName);
+        sb.append(", grade=").append(grade);
         sb.append(", address=").append(address);
         sb.append(", phone=").append(phone);
         sb.append(", email=").append(email);
@@ -151,6 +158,7 @@ public class User {
         sb.append('}');
         return sb.toString();
     }
+
 
 }
 

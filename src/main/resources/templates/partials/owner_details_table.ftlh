@@ -2,10 +2,9 @@
 
     <thead>
     <tr>
-        <th>Registration Number</th>
+        <th>Social Security Number</th>
         <th>First Name</th>
         <th>Last Name</th>
-        <th>Grade</th>
         <th>Address</th>
         <th>E-mail</th>
         <th>Phone</th>
@@ -13,10 +12,9 @@
     </thead><tbody>
     <#if userDetails?has_content>
         <tr>
-            <td> ${userDetails.rgn}</td>
+            <td> ${userDetails.ssn}</td>
             <td> ${userDetails.firstName}</td>
             <td> ${userDetails.lastName}</td>
-            <td> ${userDetails.grade}</td>
             <td> ${userDetails.address}</td>
             <td> ${userDetails.email}</td>
             <td> ${userDetails.phone}</td>

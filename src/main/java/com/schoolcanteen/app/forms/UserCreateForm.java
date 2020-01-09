@@ -8,6 +8,8 @@ public class UserCreateForm {
 
     private String lastName;
 
+    private String grade;
+
     private String address;
 
     private String phone;
@@ -44,6 +46,10 @@ public class UserCreateForm {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getGrade() { return grade; }
+
+    public void setGrade(String grade) { this.grade = grade; }
 
     public String getAddress() {
         return address;

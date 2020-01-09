@@ -35,6 +35,10 @@ public class UserController {
         userService.findByRegn(regn).forEach(users -> logger.info(users.toString()));
     }
 
+    public void FindByGrade(String grade){
+        userService.findByGrade(grade).forEach(users -> logger.info(users.toString()));
+    }
+
     public void FindByEmail(String email){
         userService.findByEmail(email).forEach(users -> logger.info(users.toString()));
     }

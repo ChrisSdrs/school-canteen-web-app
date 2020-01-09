@@ -17,17 +17,17 @@
 <div class="table-responsive">
 
     <h4>My Details</h4>
-    <#include "../partials/student_details_table.ftlh" />
+    <#include "../partials/owner_details_table.ftlh" />
     <h4>My Properties</h4>
-<#--    <#include "../partials/student_properties_table.ftlh" />-->
-<#--    <h4>My Repairs</h4>-->
-    <#include "../partials/student_repairs_table.ftlh" />
-<#--    <#include "../partials/report_chart.ftlh" />-->
+    <#include "../partials/owner_properties_table.ftlh" />
+    <h4>My Repairs</h4>
+    <#include "../partials/owner_repairs_table.ftlh" />
+    <#include "../partials/report_chart.ftlh" />
 
 </div>
 
 
-<#--<#include "../partials/main_content_bottom.ftlh">-->
+<#include "../partials/main_content_bottom.ftlh">
 <#include "../partials/scripts.ftlh">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script src="/scripts/reportCharts.js"></script>
