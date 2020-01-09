@@ -15,6 +15,8 @@ public class GlobalAttributes {
     public static final String USER_ROLE = "userRole";
     public static final String USERNAME = "username";
 
+    public static final String ALERT_TYPE = "alertType";
+    public static final String ALERT_MESSAGE = "alertMessage";
 
 
 }

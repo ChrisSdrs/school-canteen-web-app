@@ -10,17 +10,17 @@ public class User {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "user_registration_number", unique = true, nullable = false)
+    @Column(name = "user_registration_number", unique = true,  nullable = false)
     private String regn;
+
+    @Column(name = "user_grade")
+    private String grade;
 
     @Column(name = "user_first_name")
     private String firstName;
 
     @Column(name = "user_last_name")
     private String lastName;
-
-     @Column(name = "user_grade")
-    private String grade;
 
     @Column(name = "user_address")
     private String address;
@@ -40,16 +40,16 @@ public class User {
     @Column(name = "user_role")
     private String role;
 
-    public User() {
+    public User(){
 
     }
 
-    public User(Long id, String regn, String firstName, String lastName, String grade, String address, String phone, String email, String username, String password, String role) {
+    public User(Long id, String regn, String grade, String firstName, String lastName, String address, String phone, String email, String username, String password, String role) {
         this.id = id;
         this.regn = regn;
+        this.grade = grade;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.grade = grade;
         this.address = address;
         this.phone = phone;
         this.email = email;
@@ -74,6 +74,10 @@ public class User {
         this.regn = regn;
     }
 
+    public String getGrade() { return grade; }
+
+    public void setGrade(String grade) { this.grade = grade; }
+
     public String getFirstName() {
         return firstName;
     }
@@ -86,11 +90,9 @@ public class User {
         return lastName;
     }
 
-    public void setLastName(String lastName) { this.lastName = lastName; }
-
-    public String getGrade() { return grade; }
-
-    public void setGrade(String grade) { this.grade = grade; }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
     public String getAddress() {
         return address;
@@ -141,14 +143,14 @@ public class User {
     }
 
 
-    public String toString() {
+    public String toString(){
 
         final StringBuilder sb = new StringBuilder("User{");
         sb.append("id=").append(id);
         sb.append(", regn='").append(regn);
+        sb.append(", grade='").append(grade);
         sb.append(", name='").append(firstName);
         sb.append(", lastname=").append(lastName);
-        sb.append(", grade=").append(grade);
         sb.append(", address=").append(address);
         sb.append(", phone=").append(phone);
         sb.append(", email=").append(email);
@@ -158,7 +160,4 @@ public class User {
         sb.append('}');
         return sb.toString();
     }
-
-
 }
-

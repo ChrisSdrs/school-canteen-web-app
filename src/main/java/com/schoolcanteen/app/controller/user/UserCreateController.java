@@ -1,6 +1,5 @@
 package com.schoolcanteen.app.controller.user;
 
-
 import com.schoolcanteen.app.domain.User;
 import com.schoolcanteen.app.forms.UserCreateForm;
 import com.schoolcanteen.app.mappers.UserFormToUserMapper;
@@ -17,6 +16,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
+import static com.schoolcanteen.app.utils.GlobalAttributes.ALERT_MESSAGE;
+import static com.schoolcanteen.app.utils.GlobalAttributes.ALERT_TYPE;
 import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
 
 
@@ -41,7 +42,7 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
         @PostMapping(value = "/admin/users/create")
         public String createUser(Model model,
                                  @Valid @ModelAttribute(USERS_FORM)
-                                         UserCreateForm userCreateForm,
+                                          UserCreateForm userCreateForm,
                                  BindingResult bindingResult, RedirectAttributes redirectAttrs) {
 
             if (bindingResult.hasErrors()) {
@@ -58,6 +59,8 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
                     String encodedPW = encoder.encode(password);
                     user.setPassword(encodedPW);
                     userService.createUser(user);
+                    redirectAttrs.addFlashAttribute(ALERT_TYPE, "success");
+                    redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "User Created Successfully!");
                     return "redirect:/admin/users";
                 } else {
                     model.addAttribute(USERS_FORM, userCreateForm);
@@ -79,7 +82,7 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
             String username = user.getUsername();
             //User provided is not Valid if any of the ssn,email,username already exists
             if (!userService.findByRegn(regn).isEmpty()) {
-                result += "Register number Already Exists. ";
+                result += "Ssn Already Exists. ";
             }
             if (!userService.findByEmail(email).isEmpty()) {
                 result += "Email Already Exists. ";
@@ -95,18 +98,17 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
 
         private boolean isValidUserEmptyFields(User user){
             boolean isValid   = true;
-            String regn = user.getRegn();
+            String ssn = user.getRegn();
 
             String firstName = user.getFirstName();
             String lastName = user.getLastName();
-            String grade = user.getGrade();
             String address = user.getAddress();
             String phone = user.getPhone();
             String email = user.getEmail();
             String username = user.getUsername();
             String password = user.getPassword();
             String role = user.getRole();
-            if (regn.isEmpty() || email.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || grade.isEmpty() || address.isEmpty() || phone.isEmpty() || username.isEmpty() || password == null || role.isEmpty()){
+            if (ssn.isEmpty() || email.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || address.isEmpty() || phone.isEmpty() || username.isEmpty() || password == null || role.isEmpty()){
                 isValid = false;
             }
 

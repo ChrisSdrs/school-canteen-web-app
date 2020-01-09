@@ -3,13 +3,23 @@
 
 
     <div class="mb-3">
-        <label for="Ssn">Social Security Number</label>
-        <@spring.bind "userCreateForm.ssn"/>
-        <input type="text" class="form-control" name="ssn" id="ssn" placeholder="SSN" value="<#if userCreateForm.ssn?has_content>${userCreateForm.ssn}</#if>">
+        <label for="regn">Registration Number</label>
+        <@spring.bind "userCreateForm.regn"/>
+        <input type="text" class="form-control" name="regn" id="regn" placeholder="RN" value="<#if userCreateForm.regn?has_content>${userCreateForm.regn}</#if>">
         <#list spring.status.errorMessages as error>
             <span>${error}</span>
         </#list>
     </div>
+    <div class="mb-3">
+        <label for="grade">Grade</label>
+        <@spring.bind "userCreateForm.grade"/>
+        <input type="text" class="form-control" name="grade" id="grade" placeholder="Grade" value="<#if userCreateForm.grade?has_content>${userCreateForm.grade}</#if>">
+        <#list spring.status.errorMessages as error>
+            <span>${error}</span>
+        </#list>
+
+    </div>
+
     <div class="mb-3">
         <label for="firstName">First Name</label>
         <@spring.bind "userCreateForm.firstName"/>

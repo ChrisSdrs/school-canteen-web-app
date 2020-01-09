@@ -1,6 +1,6 @@
 package com.schoolcanteen.app.authenticationhandler;
 
-import org.springframework.security.core.Authentication;
+import  org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.DefaultRedirectStrategy;
 import org.springframework.security.web.RedirectStrategy;
@@ -18,34 +18,33 @@ import static com.schoolcanteen.app.utils.GlobalAttributes.TIMESTAMP_COOKIE_NAME
 
 
 @Component
-    public class LoginSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
+public class LoginSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
 
-        private static final String USER_HOME_PAGE_URL = "/user";
-        private static final String ADMIN_HOME_PAGE_URL = "/admin";
+    private static final String USER_HOME_PAGE_URL = "/user";
+    private static final String ADMIN_HOME_PAGE_URL = "/admin";
 
-        private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
+    private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
 
-        @Override
-        public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
-            //loginAttemptService.loginSucceeded(request.getSession());
+    @Override
+    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+        //loginAttemptService.loginSucceeded(request.getSession());
 
-            response.addCookie(generateTimestampCookie());
+        response.addCookie(generateTimestampCookie());
 
-            Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
-            String redirectUrl = USER_HOME_PAGE_URL;
-            for (GrantedAuthority grantedAuthority : authorities) {
-                if (grantedAuthority.getAuthority().equals("Admin")) {
-                    redirectUrl = ADMIN_HOME_PAGE_URL;
-                }
+        Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+        String redirectUrl = USER_HOME_PAGE_URL;
+        for (GrantedAuthority grantedAuthority : authorities) {
+            if (grantedAuthority.getAuthority().equals("Admin")) {
+                redirectUrl = ADMIN_HOME_PAGE_URL;
             }
-            redirectStrategy.sendRedirect(request, response, redirectUrl);
         }
-
-
-        private Cookie generateTimestampCookie() {
-            return new Cookie(TIMESTAMP_COOKIE_NAME, String.valueOf(System.currentTimeMillis()));
-        }
-
-
+        redirectStrategy.sendRedirect(request, response, redirectUrl);
     }
 
+
+    private Cookie generateTimestampCookie() {
+        return new Cookie(TIMESTAMP_COOKIE_NAME, String.valueOf(System.currentTimeMillis()));
+    }
+
+
+}

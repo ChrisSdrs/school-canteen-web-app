@@ -3,7 +3,8 @@
     <thead>
     <tr>
         <th>#</th>
-        <th>Social Security Number</th>
+        <th>Registration Number</th>
+        <th>Grade</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Address</th>
@@ -17,7 +18,8 @@
         <#list users as user>
             <tr data-id="${user.id}">
                 <td> ${user.id}</td>
-                <td> ${user.ssn}</td>
+                <td> ${user.regn}</td>
+                <td> ${user.grade}</td>
                 <td> ${user.firstName}</td>
                 <td> ${user.lastName}</td>
                 <td> ${user.address}</td>

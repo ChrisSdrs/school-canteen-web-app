@@ -5,13 +5,13 @@ jQuery(function ($){
                 required: true,
                 digits: true
             },
+            grade:{
+                required: true
+            },
             firstName:{
                 required: true
             },
             lastName:{
-                required: true
-            },
-            grade:{
                 required: true
             },
             address:{
@@ -36,18 +36,18 @@ jQuery(function ($){
             }
         },
         messages:{
-            regn:{
-                required: "Enter SSN",
-                digits: "Invalid SSN, SSN type must be number"
+            ssn:{
+                required: "Enter Registration Number",
+                digits: "Invalid Registration Number, R.N. type must be number"
+            },
+            grade:{
+                required: "Enter grade"
             },
             firstName:{
                 required: "Enter first name"
             },
             lastName:{
                 required: "Enter last name"
-            },
-            grade:{
-                required: "Enter grade"
             },
             address:{
                 required: "Enter address"

@@ -1,14 +1,15 @@
 package com.schoolcanteen.app.forms;
 
+
 public class UserCreateForm {
 
     private String regn;
 
+    private String grade;
+
     private String firstName;
 
     private String lastName;
-
-    private String grade;
 
     private String address;
 
@@ -27,9 +28,13 @@ public class UserCreateForm {
         return regn;
     }
 
-    public void setRegn(String regn) {
+    public void setRegn(String ssn) {
         this.regn = regn;
     }
+
+    public String getGrade() { return grade; }
+
+    public void setGrade(String grade) { this.grade = grade; }
 
     public String getFirstName() {
         return firstName;
@@ -46,10 +51,6 @@ public class UserCreateForm {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    public String getGrade() { return grade; }
-
-    public void setGrade(String grade) { this.grade = grade; }
 
     public String getAddress() {
         return address;

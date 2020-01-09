@@ -4,9 +4,9 @@ public class UserModel {
 
     private Long id;
     private String regn;
+    private String grade;
     private String firstName;
     private String lastName;
-    private String grade;
     private String address;
     private String phone;
     private String email;
@@ -29,6 +29,10 @@ public class UserModel {
         this.regn = regn;
     }
 
+    public String getGrade() { return grade; }
+
+    public void setGrade(String grade) { this.grade = grade; }
+
     public String getFirstName() {
         return firstName;
     }
@@ -41,11 +45,9 @@ public class UserModel {
         return lastName;
     }
 
-    public void setLastName(String lastName) { this.lastName = lastName; }
-
-    public String getGrade() { return grade; }
-
-    public void setGrade(String grade) { this.grade = grade; }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
     public String getAddress() {
         return address;
@@ -91,12 +93,12 @@ public class UserModel {
 
     }
 
-    public UserModel(Long id, String regn, String firstName, String lastName, String grade, String address, String phone, String email, String username, String role) {
+    public UserModel(Long id, String regn, String grade, String firstName, String lastName, String address, String phone, String email, String username, String role) {
         this.id = id;
         this.regn = regn;
+        this.grade = grade;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.grade = grade;
         this.address = address;
         this.phone = phone;
         this.email = email;
@@ -109,9 +111,9 @@ public class UserModel {
         return "UserModel{" +
                 "id=" + id +
                 ", regn='" + regn + '\'' +
+                ", grade='" + grade + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", grade='" + grade + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
@@ -120,4 +122,3 @@ public class UserModel {
                 '}';
     }
 }
-

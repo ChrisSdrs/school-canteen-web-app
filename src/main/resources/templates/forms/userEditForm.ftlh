@@ -7,8 +7,13 @@
 
 
     <div class="mb-3">
-        <label for="ssn">SSN</label>
-            <input type="text" class="form-control" id="ssn" name="ssn" value="${user.ssn}" readonly>
+        <label for="regn">Registration Number</label>
+            <input type="text" class="form-control" id="regn" name="regn" value="${user.regn}" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label for="grade">Grade</label>
+            <input type="text" class="form-control" id="grade" name="grade" value="${user.grade}">
     </div>
 
     <div class="mb-3">

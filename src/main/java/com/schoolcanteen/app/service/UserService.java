@@ -19,11 +19,7 @@ public interface UserService {
 
     List<UserModel> findByRegn(String regn);
 
-   List<UserModel> findByGrade(String grade);
-
     List<UserModel> findByEmail(String email);
-
-    List<UserModel> findByRegnAndEmail(String regn, String email);
 
     Optional<UserModel> findById(Long id);
 
@@ -36,5 +32,6 @@ public interface UserService {
     Optional<UserModel> findByRegnOrEmailOrUsername(String regn, String email, String username);
 
 
-    List<UserModel> findByGradeAndEmail(String grade, String email);
+    List<UserModel> findByRegnAndEmail(String regn, String email);
+
 }

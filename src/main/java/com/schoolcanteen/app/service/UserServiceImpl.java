@@ -1,6 +1,5 @@
 package com.schoolcanteen.app.service;
 
-
 import com.schoolcanteen.app.domain.User;
 import com.schoolcanteen.app.mappers.UserToUserModelMapper;
 import com.schoolcanteen.app.model.UserModel;
@@ -34,8 +33,8 @@ public class UserServiceImpl implements UserService {
         originalUser.setAddress(userModel.getAddress());
         originalUser.setEmail(userModel.getEmail());
         originalUser.setLastName(userModel.getLastName());
-        originalUser.setGrade(userModel.getGrade());
         originalUser.setPhone(userModel.getPhone());
+        originalUser.setGrade(userModel.getGrade());
         originalUser.setRegn(userModel.getRegn());
         originalUser.setRole(userModel.getRole());
         return userRepository.save(originalUser);
@@ -71,14 +70,6 @@ public class UserServiceImpl implements UserService {
     public List<UserModel> findByEmail(String email) {
         return userRepository
                 .findByEmail(email)
-                .stream()
-                .map(user -> mapper.mapToUserModel(user))
-                .collect(Collectors.toList());    }
-
-@Override
-    public List<UserModel> findByGrade(String grade) {
-        return userRepository
-                .findByGrade(grade)
                 .stream()
                 .map(user -> mapper.mapToUserModel(user))
                 .collect(Collectors.toList());    }
@@ -122,12 +113,4 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByRegnOrEmailOrUsername(regn, email, username)
                 .map(user -> mapper.mapToUserModel(user));
     }
-
-    @Override
-    public List<UserModel> findByGradeAndEmail(String grade, String email) {
-        return userRepository
-                .findByGradeAndEmail(grade, email)
-                .stream()
-                .map(user -> mapper.mapToUserModel(user))
-                .collect(Collectors.toList());    }
 }

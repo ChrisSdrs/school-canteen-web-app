@@ -1,32 +1,39 @@
 /* SideBar */
 .sidebar .nav-link {
-    display: inline-block !important;
-    padding: 6px 20px 3px 20px;
+  display: inline-block !important;
+  padding: 6px 20px 3px 20px;
 }
 .sidebar .active .nav-link {
-    color: #007bff;
+  color: #007bff;
 }
 .sidebar .active .nav-link .feather {
-    color: inherit;
+  color: inherit;
 }
 .sidebar{
     box-shadow: initial !important;
     padding: 66px 20px 20px 20px;
+    bottom: -21px;
+    left: -21px;
 }
 .sidebar-sticky{
-    background: lightblue;
-    border-radius: 16px;
-    padding: 10px 20px 10px 20px;
+    background: #e8e8e8;
+    padding: 10px 0px 10px 20px;
     height:100%;
-    background-image: linear-gradient(#cfe4ff, #8abeff);
 }
+
 
 li.navbar-header {
     border-bottom: 2px solid black;
     margin-bottom: 10px;
 }
 
-
+img.sidebar-logo {
+    width: 60px;
+}
+img.coming-soon {
+    width: 100%;
+    filter: hue-rotate(34deg);
+}
 .dashboard-username {
     float: left;
     font-size: 28px;
@@ -76,52 +83,75 @@ li.nav-item:hover {
 }
 /* Repair-User view tables*/
 .Edit-Delete{
-    text-align: center;
+  text-align: center;
 }
 .first-select-label{
-    display:none;
+  display:none;
 }
 tr{
-    transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 tr:hover {
-    background: rgba(189, 248, 251, 0.3) !important;
+  background: rgba(189, 248, 251, 0.3) !important;
 }
 thead tr:hover{
-    background: white !important;
+  background: white !important;
 }
 
 /* Dynamic Loading Elements*/
 .Dynamic-Load{
-    transition:0.8s ease;
+  transition:0.8s ease;
 }
 
 th, td {
-    text-align: center;
+  text-align: center;
 }
 
 .error{
-    color: red;
+  color: red;
 }
 
 select{
-    color: initial !important;
+  color: initial !important;
 }
 
 
-
-/* Styling */
-body, .sidebar {
-    background: #1e1e2f !important;
+/* Alerts */
+[data-notify="progressbar"] {
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
 }
+
+.alertContainer {
+    display: inline-block;
+    position: fixed;
+    top: 75px;
+    right: 40px;
+    opacity:0;
+    transition: 0.2s linear;
+    z-index: -1;
+}
+.notify-alert{
+    margin:0;
+    transition: 0.2s linear;
+}
+.alert-timer {
+    width: 100%;
+    height: 2px;
+    transition: 4.5s linear;
+    background: lime;
+}
+
 .container-fluid{
     padding-right: 30px;
 }
 /* Main Area */
 main {
-    background: #e8e8e8;
     margin: 2px 0px 20px 0;
-    border-radius: 14px;
 }
 
 .col-lg-9 {
@@ -131,7 +161,7 @@ main {
 
 /* Nav Bar */
 .navbar-dark{
-    background:#1e1e2f;
+    background:#bfbfbf;
     padding: 10px 20px !important;
 }
 a.navbar-brand {
@@ -161,6 +191,8 @@ img.logout-icon {
     filter: invert(1);
 }
 /* SideBar */
+
+
 
 /* Report Chart */
 .Report-Ul{
@@ -224,4 +256,8 @@ body, nav.sidebar{
 .display{
     opacity:1;
     z-index: 2000;
+}
+.alert-time-run {
+    width: 0 !important;
+    background: #005600;
 }

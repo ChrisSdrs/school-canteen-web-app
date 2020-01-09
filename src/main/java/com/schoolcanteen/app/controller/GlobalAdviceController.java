@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import static com.schoolcanteen.app.utils.GlobalAttributes.USERNAME;
 import static com.schoolcanteen.app.utils.GlobalAttributes.USER_ROLE;
 
+
 @ControllerAdvice
 public class GlobalAdviceController {
 
@@ -25,9 +26,11 @@ public class GlobalAdviceController {
         model.addAttribute(USERNAME, username);
 
         UserModel userDetails = userService.findByUsername(username).orElse(null);
-        if (userDetails != null) {
+        if(userDetails != null) {
             String userRole = userDetails.getRole();
             model.addAttribute(USER_ROLE, userRole);
         }
     }
+
+
 }

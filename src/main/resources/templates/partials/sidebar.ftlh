@@ -21,7 +21,7 @@
         userRole == "Admin">
 
                 <li class="">
-                    <div class="sidebar-title">Users</div>
+                    <div class="sidebar-title">Students</div>
                 </li>
 
                 <li class="nav-item nav-users
@@ -34,7 +34,7 @@
                     <a class="nav-link" href="/admin/users">
                         <img src="https://img.icons8.com/ios-filled/50/000000/user-group-man-man.png" class="nav-link-icon">
 
-                        <div class="sidebar-link-text">All Owners</div>
+                        <div class="sidebar-link-text">All Students</div>
                     </a>
                 </li>
 
@@ -44,7 +44,7 @@
                 page == "User-Edit"><li class="nav-item nav-users active">
                         <div class="nav-link" >
                             <img src="https://img.icons8.com/ios-filled/50/000000/pencil-tip.png" class="nav-link-icon">
-                            <div class="sidebar-link-text">Edit Owner</div>
+                            <div class="sidebar-link-text">Edit Student</div>
                         </div>
                     </li>
                     </#if>
@@ -61,7 +61,7 @@
                 ">
                     <a class="nav-link" href="/admin/users/search">
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/find-user-male.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Search for Owners</div>
+                        <div class="sidebar-link-text">Search for Students</div>
                     </a>
                 </li>
 
@@ -133,7 +133,7 @@
                 </li>
 
                 <li class="">
-                    <div class="sidebar-title">Properties</div>
+                    <div class="sidebar-title">Products</div>
                 </li>
 
                 <li class="nav-item
@@ -145,7 +145,7 @@
                 ">
                     <a class="nav-link" href="/admin/properties">
                         <img src="https://img.icons8.com/ios-filled/50/000000/real-estate.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">All Properties</div>
+                        <div class="sidebar-link-text">Catalogue</div>
                     </a>
                 </li>
 
@@ -154,7 +154,7 @@
                     page == "Property-Edit"><li class="nav-item nav-users active">
                         <div class="nav-link" >
                             <img src="https://img.icons8.com/ios-filled/50/000000/pencil-tip.png" class="nav-link-icon">
-                            <div class="sidebar-link-text">Edit Property</div>
+                            <div class="sidebar-link-text">Edit Product</div>
                         </div>
                     </li>
                     </#if>
@@ -169,7 +169,7 @@
                 ">
                     <a class="nav-link" href="/admin/properties/search">
                         <img src="https://img.icons8.com/ios-filled/50/000000/search-property.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Search Property</div>
+                        <div class="sidebar-link-text">Search Product</div>
                     </a>
                 </li>
 
@@ -182,7 +182,7 @@
                 ">
                     <a class="nav-link" href="/admin/properties/create">
                         <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Create Property</div>
+                        <div class="sidebar-link-text">Create Product</div>
                     </a>
                 </li>
             </#if>
@@ -197,15 +197,15 @@
                     </div>
                  </li>
 
-                <li class="">
-                    <img src="https://img.icons8.com/ios/50/000000/calendar-plus.png" class="nav-link-icon">
-                    <div class="sidebar-link-text">Arrange Repair</div>
-                </li>
+<#--                <li class="">-->
+<#--                    <img src="https://img.icons8.com/ios/50/000000/calendar-plus.png" class="nav-link-icon">-->
+<#--                    <div class="sidebar-link-text">Arrange Repair</div>-->
+<#--                </li>-->
 
-                <li class="">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">
-                    <div class="sidebar-link-text">Add Property</div>
-                </li>
+<#--                <li class="">-->
+<#--                    <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">-->
+<#--                    <div class="sidebar-link-text">Add Property</div>-->
+<#--                </li>-->
 
             </#if>
         </#if>

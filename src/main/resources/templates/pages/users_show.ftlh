@@ -10,7 +10,7 @@
 <#assign page = "Users">
 <#include "../partials/main_content_top.ftlh">
 
-            <h3 class="mb-3">Owners</h3>
+            <h3 class="mb-3">Students</h3>
             <div class="table-responsive">
 
                 <#include "../partials/users_table.ftlh" />

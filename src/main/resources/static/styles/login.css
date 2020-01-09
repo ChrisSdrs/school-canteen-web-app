@@ -3,6 +3,17 @@ body {
     height: 100%;
 }
 
+#login-page-title{
+    font-size: 35px;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+}
+
+#username{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
 body {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -31,7 +42,6 @@ body {
 }
 .form-signin .form-control {
     position: relative;
-    margin-top: 30px;
     box-sizing: border-box;
     height: auto;
     padding: 10px;
@@ -50,13 +60,6 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-
-.mb-3, .my-3 {
-    margin-bottom: 5rem!important;
-    font-size: 33px;
-
-}
-
 
 
 

@@ -1,6 +1,6 @@
 jQuery(function ($){
     $('#login').validate({
-        rules:{
+    rules:{
             username:{
                 required: true
             },
@@ -10,10 +10,10 @@ jQuery(function ($){
         },
         messages:{
             username:{
-                required: 'Enter username'
+               required: 'Enter username'
             },
             password:{
-                required: 'Enter password'
+               required: 'Enter password'
             }
         }
     });
