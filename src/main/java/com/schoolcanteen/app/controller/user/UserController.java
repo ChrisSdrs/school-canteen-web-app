@@ -25,7 +25,7 @@ public class UserController {
 
     @GetMapping(value="/admin/users")
     public String users(Model model, @ModelAttribute(ALERT_TYPE) String alertType, @ModelAttribute(ALERT_MESSAGE) String alertMessage) {
-        List<UserModel> users = userService.findByRole("Owner");
+        List<UserModel> users = userService.findByRole("Student");
         model.addAttribute(USER_LIST, users);
         model.addAttribute(ALERT_TYPE, alertType);
         model.addAttribute(ALERT_MESSAGE, alertMessage);

@@ -19,6 +19,7 @@ public class UserToUserModelMapper {
         userModel.setAddress(users.getAddress());
         userModel.setRole(users.getRole());
         userModel.setUsername(users.getUsername());
+        userModel.setDebt(users.getDebt());
         return userModel;
     }
 }

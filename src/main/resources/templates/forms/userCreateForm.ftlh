@@ -79,21 +79,15 @@
             <span>${error}</span>
         </#list>
     </div>
-    <div class="mb-3">
+
+    <div class="mb-3" ghost>
         <label for="role">Role</label>
-        <@spring.bind "userCreateForm.role"/>
-        <select class="custom-select d-block w-100" name="role" id="role" required="">
-            <option value="" selected class="first-select-label">Choose Role</option>
-            <option value="Owner"   <#if userCreateForm.role?has_content && userCreateForm.role == "Owner"> selected </#if>>
-                Owner
-            </option>
-            <option value="Admin"   <#if userCreateForm.role?has_content && userCreateForm.role == "Admin"> selected </#if>>
-                Admin
-            </option>
-        </select>
-        <#list spring.status.errorMessages as error>
-            <span>${error}</span>
-        </#list>
+        <input type="text" class="form-control" name="role" id="role" value="Student">
+    </div>
+
+    <div class="mb-3" ghost>
+        <label for="role">Sum Due</label>
+        <input type="text" class="form-control" name="debt" id="debt" value="0">
     </div>
 
     <#if userCreateError?has_content>

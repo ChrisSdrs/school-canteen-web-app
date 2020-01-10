@@ -13,6 +13,16 @@ public class UserModel {
     private String username;
     private String role;
 
+    public Double getDebt() {
+        return debt;
+    }
+
+    public void setDebt(Double debt) {
+        this.debt = debt;
+    }
+
+    private Double debt;
+
     public Long getId() {
         return id;
     }
@@ -93,7 +103,7 @@ public class UserModel {
 
     }
 
-    public UserModel(Long id, String regn, String grade, String firstName, String lastName, String address, String phone, String email, String username, String role) {
+    public UserModel(Long id, String regn, String grade, String firstName, String lastName, String address, String phone, String email, String username, String role, Double debt) {
         this.id = id;
         this.regn = regn;
         this.grade = grade;
@@ -104,6 +114,7 @@ public class UserModel {
         this.email = email;
         this.username = username;
         this.role = role;
+        this.debt = debt;
     }
 
     @Override
@@ -119,6 +130,7 @@ public class UserModel {
                 ", email='" + email + '\'' +
                 ", username='" + username + '\'' +
                 ", role='" + role + '\'' +
+                ", debt='" + debt + '\'' +
                 '}';
     }
 }
