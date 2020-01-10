@@ -82,7 +82,7 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
             String username = user.getUsername();
             //User provided is not Valid if any of the ssn,email,username already exists
             if (!userService.findByRegn(regn).isEmpty()) {
-                result += "Ssn Already Exists. ";
+                result += "Registration Number Already Exists. ";
             }
             if (!userService.findByEmail(email).isEmpty()) {
                 result += "Email Already Exists. ";
@@ -98,8 +98,7 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
 
         private boolean isValidUserEmptyFields(User user){
             boolean isValid   = true;
-            String ssn = user.getRegn();
-
+            String regn = user.getRegn();
             String firstName = user.getFirstName();
             String lastName = user.getLastName();
             String address = user.getAddress();
@@ -108,7 +107,7 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
             String username = user.getUsername();
             String password = user.getPassword();
             String role = user.getRole();
-            if (ssn.isEmpty() || email.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || address.isEmpty() || phone.isEmpty() || username.isEmpty() || password == null || role.isEmpty()){
+            if (regn.isEmpty() || email.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || address.isEmpty() || phone.isEmpty() || username.isEmpty() || password == null || role.isEmpty()){
                 isValid = false;
             }
 

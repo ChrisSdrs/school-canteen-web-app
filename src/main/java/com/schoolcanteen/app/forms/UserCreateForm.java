@@ -28,7 +28,7 @@ public class UserCreateForm {
         return regn;
     }
 
-    public void setRegn(String ssn) {
+    public void setRegn(String regn) {
         this.regn = regn;
     }
 
