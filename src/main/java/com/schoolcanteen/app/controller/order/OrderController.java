@@ -1,7 +1,6 @@
 package com.schoolcanteen.app.controller.order;
 
 import com.schoolcanteen.app.domain.Order;
-import com.schoolcanteen.app.domain.User;
 import com.schoolcanteen.app.forms.OrderForm;
 import com.schoolcanteen.app.mappers.OrderFormToOrderMapper;
 import com.schoolcanteen.app.model.OrderModel;
@@ -13,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
@@ -36,23 +36,29 @@ public class OrderController {
     private OrderFormToOrderMapper mapper;
 
 
-    @GetMapping(value = "/admin/properties")
+    @GetMapping(value = "/admin/orders")
     public String properties(Model model) {
 
         List<OrderModel> orders = orderService.findAll();
         model.addAttribute(ORDERS, orders);
-        return "pages/properties_show";
+        return "pages/orders_show";
+    }
+
+    @GetMapping(value = "/admin/orders/search")
+    public String searchProperty(Model model) {
+
+        return "pages/order_search";
     }
 
 
-    @GetMapping(value = "/admin/properties/create")
+    @GetMapping(value = "/admin/orders/create")
     public String createProperty(Model model) {
 
         model.addAttribute(ORDER_FORM, new OrderForm());
         return "pages/order_create";
     }
 
-    @PostMapping(value = "/admin/properties/create")
+    @PostMapping(value = "/admin/orders/create")
     public String createProperty(Model model, @Valid @ModelAttribute(ORDER_FORM) OrderForm orderForm) {
 
         Order order = mapper.mapToOrderModel(orderForm);
@@ -60,18 +66,30 @@ public class OrderController {
 
         String regn = order.getRegn();
         Double purchaseCost = order.getCost();
-        List<UserModel> studentList = userService.findByRegn(regn);
+        if (!userService.findByRegn(regn).isEmpty()) {
+            List<UserModel> studentList = userService.findByRegn(regn);
 
-        Iterator iter = studentList.iterator();
-        UserModel student = (UserModel) iter.next();
-        Double sumDue = student.getDebt();
-        sumDue += purchaseCost;
-        student.setDebt(sumDue);
+            Iterator iter = studentList.iterator();
 
-        userService.updateUser(student);
-        return "redirect:/admin/properties";
+            UserModel student = (UserModel) iter.next();
+            Double sumDue = student.getDebt();
+            sumDue += purchaseCost;
+            student.setDebt(sumDue);
+
+            userService.updateUser(student);
+        }
+        return "redirect:/admin/orders";
 
 
 
     }
+
+
+
+    @PostMapping(value = "/admin/orders/{id}/delete")
+    public String deleteUser(@PathVariable Long id) {
+        orderService.deleteById(id);
+        return "redirect:/admin/orders";
+    }
 }
+

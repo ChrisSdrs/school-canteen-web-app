@@ -31,7 +31,7 @@ public class LoginController {
 
     @GetMapping(value = "/login")
     public String login() {
-        return "login";
+        return "index";
     }
 
     @GetMapping(value = "/login-error")
@@ -43,7 +43,7 @@ public class LoginController {
         if (bindingResult.hasErrors()) {
             //have some error handling here, perhaps add extra error messages to the model
             model.addAttribute(ERROR_MESSAGE, "an error occurred");
-            return "login";
+            return "index";
         }
         String username = loginForm.getUsername();
         String password = loginForm.getPassword();
@@ -52,7 +52,7 @@ public class LoginController {
         }
         else {
             model.addAttribute(LOGIN_AUTHENTICATION, "fail");
-            return "login";
+            return "index";
         }
     }
 

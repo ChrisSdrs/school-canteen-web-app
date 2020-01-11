@@ -10,10 +10,10 @@
 
 <#include "../partials/navbar.ftlh">
 
-<#assign page = "Properties-Create">
+<#assign page = "Orders-Create">
 <#include "../partials/main_content_top.ftlh">
 
-<h3 class="mb-3">Create Order</h3>
+<h3 class="mb-3">Create Property</h3>
 <div class="table-responsive">
 
     <#include "../forms/orderCreateForm.ftlh" />

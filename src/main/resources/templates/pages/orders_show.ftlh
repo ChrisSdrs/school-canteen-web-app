@@ -10,19 +10,22 @@
 
 <#include "../partials/navbar.ftlh">
 
-<#assign page = "Property-Edit">
+<#assign page = "Orders">
 <#include "../partials/main_content_top.ftlh">
 
-<h3 class="mb-3">Edit Property</h3>
+<h3 class="mb-3">Orders</h3>
 <div class="table-responsive">
 
-    <#include "../forms/propertyEditForm.ftlh" />
+    <#include "../partials/orders_table.ftlh" />
 </div>
+
+<!-- Modal -->
+<#include "../partials/delete_confirm_modal.ftlh" />
+
+
 
 <#include "../partials/main_content_bottom.ftlh">
 <#include "../partials/scripts.ftlh">
 <script src="/scripts/main.js"></script>
-<script src="/scripts/propertyValidation.js"></script>
 </body>
 </html>
-

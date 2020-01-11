@@ -85,19 +85,19 @@
                 <li class="nav-item
                     <#if page?has_content>
                         <#if
-                    page == "Properties">active
+                    page == "Orders">active
                         </#if>
                     </#if>
                 ">
-                    <a class="nav-link" href="/admin/properties">
+                    <a class="nav-link" href="/admin/orders">
                         <img src="https://img.icons8.com/ios-filled/50/000000/real-estate.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Catalogue</div>
+                        <div class="sidebar-link-text">Orders</div>
                     </a>
                 </li>
 
                 <#if page?has_content>
                     <#if
-                    page == "Property-Edit"><li class="nav-item nav-users active">
+                    page == "Order-Edit"><li class="nav-item nav-users active">
                         <div class="nav-link" >
                             <img src="https://img.icons8.com/ios-filled/50/000000/pencil-tip.png" class="nav-link-icon">
                             <div class="sidebar-link-text">Edit Product</div>
@@ -106,27 +106,16 @@
                     </#if>
                 </#if>
 
-                <li class="nav-item
-                    <#if page?has_content>
-                        <#if
-                    page == "Properties-Search">active
-                        </#if>
-                    </#if>
-                ">
-                    <a class="nav-link" href="/admin/properties/search">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/search-purchases.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Search Product</div>
-                    </a>
-                </li>
+
 
                 <li class="nav-item
                     <#if page?has_content>
                         <#if
-                    page == "Properties-Create">active
+                    page == "Orders-Create">active
                         </#if>
                     </#if>
                 ">
-                    <a class="nav-link" href="/admin/properties/create">
+                    <a class="nav-link" href="/admin/orders/create">
                         <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">
                         <div class="sidebar-link-text">Create Product</div>
                     </a>
@@ -135,7 +124,7 @@
         </#if>
         <#if userRole?has_content>
                     <#if
-                userRole == "Owner">
+                userRole == "Student">
 
                  <li class="" style="margin-top: 60px;">
                     <div class="coming-soon-holder">

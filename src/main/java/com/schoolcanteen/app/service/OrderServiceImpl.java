@@ -32,4 +32,9 @@ public class OrderServiceImpl implements OrderService {
         return orderRepository.save(order);
     }
 
+    @Override
+    public void deleteById(Long id) {
+        orderRepository.deleteById(id);
+    }
+
 }

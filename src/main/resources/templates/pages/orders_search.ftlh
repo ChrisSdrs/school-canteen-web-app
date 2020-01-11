@@ -10,13 +10,13 @@
 
 <#include "../partials/navbar.ftlh">
 
-<#assign page = "Properties-Search">
+<#assign page = "Orders-Search">
 <#include "../partials/main_content_top.ftlh">
 
         <h3 class="mb-3">Search Property</h3>
         <div class="table-responsive">
 
-            <#include "../forms/propertySearchForm.ftlh" />
+            <#include "../forms/orderSearchForm.ftlh" />
         </div>
 
 <!-- Modal -->

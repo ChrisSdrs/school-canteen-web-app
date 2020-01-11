@@ -1,20 +1,12 @@
 package com.schoolcanteen.app.controller;
 
 
-import com.schoolcanteen.app.model.PurchaseModel;
-import com.schoolcanteen.app.model.RepairModel;
-import com.schoolcanteen.app.model.ReportModel;
-import com.schoolcanteen.app.model.UserModel;
-import com.schoolcanteen.app.service.PurchaseService;
-import com.schoolcanteen.app.service.RepairService;
 import com.schoolcanteen.app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.util.List;
 
 @Controller
 public class OwnerController {
@@ -24,9 +16,6 @@ public class OwnerController {
 
     @Autowired
     private UserService userService;
-
-    @Autowired
-    private PurchaseService purchaseService;
 
 
     @GetMapping(value = "/user")

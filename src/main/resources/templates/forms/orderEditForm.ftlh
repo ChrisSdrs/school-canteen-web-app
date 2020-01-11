@@ -1,4 +1,4 @@
-<form action="/admin/properties/edit" id="propertyVal" name="purchaseForm" method="POST">
+<form action="/admin/orders/edit" id="propertyVal" name="purchaseForm" method="POST">
 
 
     <input type="hidden" name="id" value="${purchases.id}">
