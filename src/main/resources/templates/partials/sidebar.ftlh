@@ -168,7 +168,7 @@
                     </#if>
                 ">
                     <a class="nav-link" href="/admin/properties/search">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/search-property.png" class="nav-link-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/search-purchases.png" class="nav-link-icon">
                         <div class="sidebar-link-text">Search Product</div>
                     </a>
                 </li>
@@ -204,7 +204,7 @@
 
 <#--                <li class="">-->
 <#--                    <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">-->
-<#--                    <div class="sidebar-link-text">Add Property</div>-->
+<#--                    <div class="sidebar-link-text">Add Purchases</div>-->
 <#--                </li>-->
 
             </#if>

@@ -1,10 +1,10 @@
 <#import "/spring.ftl" as spring />
 
-<form action="/admin/properties/create" id="propertyVal" name="purchaseForm" method="POST">
+<form action="/admin/properties/create" id="propertyVal" name="orderForm" method="POST">
 
     <div class="mb-3">
-        <label for="regn">Student's Registration Number</label>
-        <input type="text" class="form-control" name="regn" id="regn" placeholder="Registration Number" value="<#if user?has_content> ${user.regn} </#if>">
+        <label for="regn">Registration Number</label>
+        <input type="text" class="form-control" name="regn" id="regn" placeholder="Reg Number">
     </div>
 
     <div class="mb-3">

@@ -1,12 +1,12 @@
-<form action="/admin/properties/edit" id="propertyVal" name="propertyForm" method="POST">
+<form action="/admin/properties/edit" id="propertyVal" name="purchaseForm" method="POST">
 
 
-    <input type="hidden" name="id" value="${property.id}">
+    <input type="hidden" name="id" value="${purchases.id}">
 
     <div class="mb-3">
         <label for="pin">Property Identification Number</label>
-        <@spring.bind "propertyForm.pin"/>
-        <input type="text" class="form-control" name="pin" id="pin" placeholder="Pin" value="${property.pin}">
+        <@spring.bind "purchaseForm.pin"/>
+        <input type="text" class="form-control" name="pin" id="pin" placeholder="Pin" value="${purchases.pin}">
         <#list spring.status.errorMessages as error>
             <span>${error}</span>
         </#list>
@@ -14,8 +14,8 @@
 
     <div class="mb-3">
         <label for="address">Address</label>
-        <@spring.bind "propertyForm.address"/>
-        <input type="text" class="form-control" name="address" id="address" placeholder="Address" value="${property.address}">
+        <@spring.bind "purchaseForm.address"/>
+        <input type="text" class="form-control" name="address" id="address" placeholder="Address" value="${purchases.address}">
         <#list spring.status.errorMessages as error>
             <span>${error}</span>
         </#list>
@@ -23,8 +23,8 @@
 
     <div class="mb-3">
         <label for="year">Year of Construction</label>
-        <@spring.bind "propertyForm.year"/>
-        <input type="text" class="form-control" name="year" id="year" placeholder="Year of Construction" value="${property.year}">
+        <@spring.bind "purchaseForm.year"/>
+        <input type="text" class="form-control" name="year" id="year" placeholder="Year of Construction" value="${purchases.year}">
         <#list spring.status.errorMessages as error>
             <span>${error}</span>
         </#list>
@@ -32,16 +32,16 @@
 
     <div class="mb-3">
         <label for="type">Property Type</label>
-        <@spring.bind "propertyForm.type"/>
+        <@spring.bind "purchaseForm.type"/>
         <select class="custom-select d-block w-100" name="type" id="type" required="">
             <option value="" class="first-select-label" selected>Choose Property Type</option>
-            <option value="Detached house"   <#if property.type == "Detached house"> selected </#if>>
+            <option value="Detached house"   <#if purchases.type == "Detached house"> selected </#if>>
                 Detached house
             </option>
-            <option value="Maisonette"   <#if property.type == "Maisonette"> selected </#if>>
+            <option value="Maisonette"   <#if purchases.type == "Maisonette"> selected </#if>>
                 Maisonette
             </option>
-            <option value="Apartment building"   <#if property.type == "Apartment building"> selected </#if>>
+            <option value="Apartment building"   <#if purchases.type == "Apartment building"> selected </#if>>
                 Apartment building
             </option>
         </select>
@@ -52,8 +52,8 @@
 
     <div class="mb-3">
         <label for="owner">Owner</label>
-        <@spring.bind "propertyForm.owner"/>
-        <input type="text" class="form-control" name="owner" id="owner" placeholder="Owner's Social Security Number" value="${property.owner}">
+        <@spring.bind "purchaseForm.owner"/>
+        <input type="text" class="form-control" name="owner" id="owner" placeholder="Owner's Social Security Number" value="${purchases.owner}">
         <#list spring.status.errorMessages as error>
             <span>${error}</span>
         </#list>

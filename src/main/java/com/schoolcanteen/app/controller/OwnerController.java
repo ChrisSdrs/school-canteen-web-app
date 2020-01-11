@@ -1,11 +1,11 @@
 package com.schoolcanteen.app.controller;
 
 
-import com.schoolcanteen.app.model.PropertyModel;
+import com.schoolcanteen.app.model.PurchaseModel;
 import com.schoolcanteen.app.model.RepairModel;
 import com.schoolcanteen.app.model.ReportModel;
 import com.schoolcanteen.app.model.UserModel;
-import com.schoolcanteen.app.service.PropertyService;
+import com.schoolcanteen.app.service.PurchaseService;
 import com.schoolcanteen.app.service.RepairService;
 import com.schoolcanteen.app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +28,7 @@ public class OwnerController {
     private UserService userService;
 
     @Autowired
-    private PropertyService propertyService;
+    private PurchaseService purchaseService;
 
     @Autowired
     private RepairService repairService;
@@ -39,7 +39,7 @@ public class OwnerController {
 
         UserModel userDetails = userService.findByUsername(username).get();
         String regn = userDetails.getRegn();
-        List<PropertyModel> userProperties = propertyService.findByOwner(regn);
+        List<PurchaseModel> userProperties = purchaseService.findByRegn(regn);
 
 
         List<RepairModel> userRepairs = repairService.findByOwner(regn);
