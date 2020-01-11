@@ -12,7 +12,7 @@
     </thead><tbody>
     <#if userDetails?has_content>
         <tr>
-            <td> ${userDetails.ssn}</td>
+            <td> ${userDetails.regn}</td>
             <td> ${userDetails.firstName}</td>
             <td> ${userDetails.lastName}</td>
             <td> ${userDetails.address}</td>
