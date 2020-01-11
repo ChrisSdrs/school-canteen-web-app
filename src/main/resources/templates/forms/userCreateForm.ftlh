@@ -12,11 +12,27 @@
     </div>
     <div class="mb-3">
         <label for="grade">Grade</label>
-        <@spring.bind "userCreateForm.grade"/>
-        <input type="text" class="form-control" name="grade" id="grade" placeholder="Grade" value="<#if userCreateForm.grade?has_content>${userCreateForm.grade}</#if>">
-        <#list spring.status.errorMessages as error>
-            <span>${error}</span>
-        </#list>
+
+        <select class="custom-select d-block w-100" name="grade" id="grade" required >
+            <option value="" selected class="first-select-label">Choose Class</option>
+            <option value="1" disabled class="class-header">Elementary School</option>
+            <option value="Elementary 1st Grade">1st Grade</option>
+            <option value="Elementary 2nd Grade">2st Grade</option>
+            <option value="Elementary 3rd Grade">3st Grade</option>
+            <option value="Elementary 4th Grade">4st Grade</option>
+            <option value="Elementary 5th Grade">5st Grade</option>
+            <option value="Elementary 6th Grade">6st Grade</option>
+            <option value="7" disabled class="class-header">Middle School</option>
+            <option value="Middle School 1st Grade">1st Grade</option>
+            <option value="Middle School 2nd Grade">2st Grade</option>
+            <option value="Middle School 3rd Grade">3st Grade</option>
+            <option value="11" disabled class="class-header">High School</option>
+            <option value="High School 1st Grade">1st Grade</option>
+            <option value="High School 2nd Grade">2st Grade</option>
+            <option value="High School 3rd Grade">3st Grade</option>
+            <option value="High School IA">IA</option>
+            <option value="High School IB">IB</option>
+        </select>
 
     </div>
 
