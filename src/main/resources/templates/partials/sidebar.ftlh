@@ -114,7 +114,7 @@
                     </#if>
                 ">
                     <a class="nav-link" href="/admin/properties/search">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/search-property.png" class="nav-link-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/search-purchases.png" class="nav-link-icon">
                         <div class="sidebar-link-text">Search Product</div>
                     </a>
                 </li>
@@ -142,6 +142,18 @@
                         <img class="coming-soon" src="https://freepngimg.com/download/coming_soon/7-2-coming-soon-png-picture.png">
                     </div>
                  </li>
+
+<#--                <li class="">-->
+<#--                    <img src="https://img.icons8.com/ios/50/000000/calendar-plus.png" class="nav-link-icon">-->
+<#--                    <div class="sidebar-link-text">Arrange Repair</div>-->
+<#--                </li>-->
+
+<#--                <li class="">-->
+<#--                    <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">-->
+<#--                    <div class="sidebar-link-text">Add Purchases</div>-->
+<#--                </li>-->
+
+
             </#if>
         </#if>
         </ul>

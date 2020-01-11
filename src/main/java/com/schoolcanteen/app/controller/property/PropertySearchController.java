@@ -3,8 +3,8 @@ package com.schoolcanteen.app.controller.property;
 
 import com.schoolcanteen.app.forms.PropertySearchForm;
 import com.schoolcanteen.app.mappers.PropertyFormToPropertyMapper;
-import com.schoolcanteen.app.model.PropertyModel;
-import com.schoolcanteen.app.service.PropertyService;
+import com.schoolcanteen.app.model.PurchaseModel;
+import com.schoolcanteen.app.service.PurchaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,7 +25,7 @@ public class PropertySearchController {
     private static final String PROPERTIES = "properties";
 
     @Autowired
-    private PropertyService propertyService;
+    private PurchaseService purchaseService;
 
     @Autowired
     private PropertyFormToPropertyMapper mapper;
@@ -47,33 +47,14 @@ public class PropertySearchController {
             model.addAttribute(ERROR_MESSAGE, "an error occurred");
             return "pages/properties_search";
         }
-        String pin = propertySearchForm.getPin();
-        String owner = propertySearchForm.getOwner();
 
 
-        List<PropertyModel> properties = getPropertiesFromSearch(pin,owner);
+        List<PurchaseModel> properties = purchaseService.findAll();
         model.addAttribute(PROPERTIES, properties);
         model.addAttribute(PROPERTY_SEARCH_FORM, propertySearchForm);
         return "pages/properties_search_results";
-    }
 
-    private List<PropertyModel> getPropertiesFromSearch(String pin, String owner){
-        if (pin == ""){
-            if (owner == ""){
-                return propertyService.findAll();
-            }
-            else{
-                return propertyService.findByOwner(owner);
-            }
-        }
-        else{
-            if (owner == ""){
-                return propertyService.findByPin(pin);
-            }
-            else{
-                return propertyService.findByPinAndOwner(pin,owner);
-            }
-        }
+
     }
 
 }

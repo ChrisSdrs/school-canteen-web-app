@@ -58,3 +58,5 @@ INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_la
 INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('200067344' , '1st grade', 'Luke', 'Walker', '1997 Main St, Patras, Greece', 'Luke_w@gmail.com', '2610775431', 'Luke', '$2a$10$ZK5BtuU.IoAOXp6MLErYUOtmSzNl1MEwPNP9aLPR1QGYhjgFdxqoi', 'Student', 0);
 
 INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('744567778' , '1st grade', 'Madara', 'Uchiha', '1001 Main St, Patras, Greece', 'madara@gmail.com', '2610008744', 'madara', '$2a$10$QjQuqaZJIWTFpiDWjcZsVeyUtj34Y1x67izzjmg6/YGyq5BzVjkwi', 'Student', 0);
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('154480337', 'tyropita', 2.0 );

@@ -1,8 +1,8 @@
 package com.schoolcanteen.app.controller.property;
 
-import com.schoolcanteen.app.forms.PropertyForm;
-import com.schoolcanteen.app.model.PropertyModel;
-import com.schoolcanteen.app.service.PropertyService;
+import com.schoolcanteen.app.forms.PurchaseForm;
+import com.schoolcanteen.app.model.PurchaseModel;
+import com.schoolcanteen.app.service.PurchaseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,29 +21,29 @@ public class PropertyEditController {
     private static final String PROPERTY = "property";
 
     @Autowired
-    private PropertyService propertyService;
+    private PurchaseService purchaseService;
 
     @PostMapping(value = "/admin/properties/{id}/edit")
     public String editProperty(@PathVariable Long id, Model model, RedirectAttributes redirectAttrs) {
-        PropertyModel propertyModel = propertyService.findById(id).get();
-        model.addAttribute(PROPERTY_FORM, new PropertyForm());
-        model.addAttribute(PROPERTY, propertyModel);
+        PurchaseModel purchaseModel = purchaseService.findById(id).get();
+        model.addAttribute(PROPERTY_FORM, new PurchaseForm());
+        model.addAttribute(PROPERTY, purchaseModel);
         redirectAttrs.addFlashAttribute(ALERT_TYPE, "success");
-        redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "Property Edited successfully!");
+        redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "Purchases Edited successfully!");
         return "pages/property_edit";
     }
 
     @PostMapping(value = "/admin/properties/edit")
-    public String editProperty(PropertyModel propertyModel) {
-        propertyService.updateProperty(propertyModel);
+    public String editProperty(PurchaseModel purchaseModel) {
+        purchaseService.updateProperty(purchaseModel);
         return "redirect:/admin/properties";
     }
 
     @PostMapping(value = "/admin/properties/{id}/delete")
     public String deleteProperty(@PathVariable Long id, RedirectAttributes redirectAttrs) {
-        propertyService.deleteById(id);
+        purchaseService.deleteById(id);
         redirectAttrs.addFlashAttribute(ALERT_TYPE, "info");
-        redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "Property Deleted successfully!");
+        redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "Purchases Deleted successfully!");
         return "redirect:/admin/properties";
     }
 }

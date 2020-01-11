@@ -7,7 +7,6 @@ jQuery(function ($){
             },
             year:{
                 required: true,
-                digits: true
             },
             address:{
                 required: true

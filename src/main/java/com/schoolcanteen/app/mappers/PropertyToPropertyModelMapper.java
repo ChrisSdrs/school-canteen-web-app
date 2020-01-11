@@ -1,21 +1,19 @@
 package com.schoolcanteen.app.mappers;
 
-import com.schoolcanteen.app.domain.Property;
-import com.schoolcanteen.app.model.PropertyModel;
+import com.schoolcanteen.app.domain.Purchase;
+import com.schoolcanteen.app.model.PurchaseModel;
 import org.springframework.stereotype.Component;
 
 @Component
 public class PropertyToPropertyModelMapper {
 
-    public PropertyModel mapToPropertyModel(Property property) {
-       PropertyModel propertyModel = new PropertyModel();
-       propertyModel.setId(property.getId());
-       propertyModel.setPin(property.getPin());
-       propertyModel.setAddress(property.getAddress());
-       propertyModel.setYear(property.getYear());
-       propertyModel.setType(property.getType());
-       propertyModel.setOwner(property.getOwner());
+    public PurchaseModel mapToPropertyModel(Purchase purchase) {
+       PurchaseModel purchaseModel = new PurchaseModel();
+       purchaseModel.setId(purchase.getId());
+       purchaseModel.setCost(purchase.getCost());
+       purchaseModel.setDescription(purchase.getDescription());
+       purchaseModel.setRegn(purchase.getRegn());
 
-       return propertyModel;
+       return purchaseModel;
     }
 }
