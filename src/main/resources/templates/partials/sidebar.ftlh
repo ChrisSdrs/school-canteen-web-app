@@ -79,60 +79,6 @@
                 </li>
 
                 <li class="">
-                    <div class="sidebar-title">Repairs</div>
-                </li>
-
-                <li class="nav-item
-                    <#if page?has_content>
-                        <#if
-                            page == "Repairs">active
-                        </#if>
-                    </#if>
-                ">
-                    <a class="nav-link " href="/admin/repairs">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/gears.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">All Repairs</div>
-                    </a>
-                </li>
-
-                <#if page?has_content>
-                    <#if
-                    page == "Repair-Edit"><li class="nav-item nav-users active">
-                        <div class="nav-link" >
-                            <img src="https://img.icons8.com/ios-filled/50/000000/pencil-tip.png" class="nav-link-icon">
-                            <div class="sidebar-link-text">Edit Repair</div>
-                        </div>
-                    </li>
-                    </#if>
-                </#if>
-
-                <li class="nav-item
-                    <#if page?has_content>
-                        <#if
-                    page == "Repairs-Search">active
-                        </#if>
-                    </#if>
-                ">
-                    <a class="nav-link" href="/admin/repairs/search">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/advanced-search.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Search for repairs</div>
-                    </a>
-                </li>
-
-                <li class="nav-item
-                    <#if page?has_content>
-                        <#if
-                    page == "Repairs-Create">active
-                        </#if>
-                    </#if>
-                ">
-                    <a class="nav-link" href="/admin/repairs/create">
-                        <img src="https://img.icons8.com/ios/50/000000/calendar-plus.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Create Repair</div>
-                    </a>
-                </li>
-
-                <li class="">
                     <div class="sidebar-title">Products</div>
                 </li>
 
@@ -206,6 +152,7 @@
 <#--                    <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">-->
 <#--                    <div class="sidebar-link-text">Add Purchases</div>-->
 <#--                </li>-->
+
 
             </#if>
         </#if>

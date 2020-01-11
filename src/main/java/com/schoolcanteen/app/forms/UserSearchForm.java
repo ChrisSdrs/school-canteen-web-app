@@ -9,7 +9,7 @@ public class UserSearchForm {
         return regn;
     }
 
-    public void setSsn(String regn) {
+    public void setRegn(String regn) {
         this.regn = regn;
     }
 

@@ -21,8 +21,6 @@ public class OwnerController {
 
     private static final String USER_DETAILS = "userDetails";
     private static final String USER_PROPERTIES = "userProperties";
-    private static final String USER_REPAIRS = "userRepairs";
-    private static final String REPORT_MODEL = "reportModel";
 
     @Autowired
     private UserService userService;
@@ -30,8 +28,6 @@ public class OwnerController {
     @Autowired
     private PurchaseService purchaseService;
 
-    @Autowired
-    private RepairService repairService;
 
     @GetMapping(value = "/user")
     public String repairsToday(Model model) {
@@ -67,21 +63,10 @@ public class OwnerController {
 //        model.addAttribute(USER_PROPERTIES, userProperties);
 //        model.addAttribute(USER_REPAIRS, userRepairs);
 
+        
+
         return "pages/owner";
     }
 
-    private int getStatusResult(List<RepairModel> userRepairs, String statusGiven){
-        int result = 0;
-        String status;
-        RepairModel currentRepairModel;
-        for( int i=0; i<userRepairs.size(); i++ ) {
-            currentRepairModel = (userRepairs.get(i));
-            status = currentRepairModel.getStatus();
-            if (status.matches(statusGiven)) {
-                result += 1;
-            }
-        }
-        return result;
-    }
 
 }

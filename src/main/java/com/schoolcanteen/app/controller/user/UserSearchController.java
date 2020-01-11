@@ -46,11 +46,11 @@ public class UserSearchController {
             model.addAttribute(ERROR_MESSAGE, "an error occurred");
             return "pages/users_search";
         }
-        String ssn = userSearchForm.getRegn();
+        String regn = userSearchForm.getRegn();
         String email = userSearchForm.getEmail();
 
 
-        List<UserModel> users = getUsersFromSearch(ssn,email);
+        List<UserModel> users = getUsersFromSearch(regn,email);
         model.addAttribute(USER_LIST, users);
         model.addAttribute(USER_SEARCH_FORM, userSearchForm);
         return "pages/users_search_results";
@@ -69,7 +69,7 @@ public class UserSearchController {
 
             return userService.findByEmail(email);
 
-        } else return userService.findByRole("Owner");
+        } else return userService.findByRole("Student");
     }
 
 }

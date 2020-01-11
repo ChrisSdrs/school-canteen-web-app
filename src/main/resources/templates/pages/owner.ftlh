@@ -20,9 +20,6 @@
     <#include "../partials/owner_details_table.ftlh" />
     <h4>My Properties</h4>
     <#include "../partials/owner_properties_table.ftlh" />
-    <h4>My Repairs</h4>
-    <#include "../partials/owner_repairs_table.ftlh" />
-    <#include "../partials/report_chart.ftlh" />
 
 </div>
 
