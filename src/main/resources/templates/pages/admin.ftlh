@@ -16,10 +16,10 @@
 <#include "../partials/main_content_top.ftlh">
 
 
-    <h3 class="mb-3">Repairs<small class="text-muted">(today)</small></h3>
+    <h3 class="mb-3">Students<small class="text-muted"></small></h3>
     <div class="table-responsive">
 
-        <#include "../partials/repairs_table.ftlh" />
+        <#include "../partials/users_table.ftlh" />
     </div>
 
 

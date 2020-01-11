@@ -23,6 +23,18 @@ public class UserCreateForm {
 
     private String role;
 
+    private Double debt;
+
+    public Double getDebt() {
+        return debt;
+    }
+
+    public void setDebt(Double debt) {
+        this.debt = debt;
+    }
+
+
+
 
     public String getRegn() {
         return regn;

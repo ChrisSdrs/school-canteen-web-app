@@ -37,6 +37,7 @@ public class UserServiceImpl implements UserService {
         originalUser.setGrade(userModel.getGrade());
         originalUser.setRegn(userModel.getRegn());
         originalUser.setRole(userModel.getRole());
+        originalUser.setDebt(userModel.getDebt());
         return userRepository.save(originalUser);
     }
 

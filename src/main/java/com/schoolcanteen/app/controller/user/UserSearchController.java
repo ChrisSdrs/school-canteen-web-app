@@ -69,7 +69,7 @@ public class UserSearchController {
 
             return userService.findByEmail(email);
 
-        } else return userService.findByRole("Owner");
+        } else return userService.findByRole("Student");
     }
 
 }

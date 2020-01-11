@@ -1,6 +1,5 @@
 package com.schoolcanteen.app;
 
-import com.schoolcanteen.app.controller.repair.RepairController;
 import com.schoolcanteen.app.controller.user.UserController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -17,8 +16,6 @@ public class CanteenApplication implements CommandLineRunner {
 	@Autowired
 	private UserController userController;
 
-	@Autowired
-	private RepairController repairController;
 
 	public static void main(String[] args) {
 		SpringApplication.run(CanteenApplication.class, args);

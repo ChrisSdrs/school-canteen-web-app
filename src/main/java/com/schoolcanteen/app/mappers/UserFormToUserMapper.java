@@ -20,6 +20,7 @@ public class UserFormToUserMapper {
         user.setUsername(userCreateForm.getUsername());
         user.setPassword(userCreateForm.getPassword());
         user.setRole(userCreateForm.getRole());
+        user.setDebt(userCreateForm.getDebt());
 
         return user;
     }

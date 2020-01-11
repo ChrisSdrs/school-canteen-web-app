@@ -42,6 +42,11 @@
     </div>
 
     <div class="mb-3">
+        <label for="phone">Sum Due</label>
+        <input type="text" class="form-control" id="debt" name="debt"  value="${user.debt}">
+    </div>
+
+    <div class="mb-3">
         <label for="username">Username</label>
             <input type="text" class="form-control" id="username" name="username"  value="${user.username}" readonly>
     </div>

@@ -21,6 +21,17 @@ public class UserEditForm {
 
     private String role;
 
+    public Double getDebt() {
+        return debt;
+    }
+
+    public void setDebt(Double debt) {
+        this.debt = debt;
+    }
+
+    private Double debt;
+
+
 
     public String getRegn() {
         return regn;
@@ -91,7 +102,7 @@ public class UserEditForm {
     public UserEditForm() {
     }
 
-    public UserEditForm(String regn, String grade, String firstName, String lastName, String address, String phone, String email, String username, String role) {
+    public UserEditForm(String regn, String grade, String firstName, String lastName, String address, String phone, String email, String username, String role, Double debt) {
         this.regn = regn;
         this.grade = grade;
         this.firstName = firstName;
@@ -101,5 +112,6 @@ public class UserEditForm {
         this.email = email;
         this.username = username;
         this.role = role;
+        this.debt = debt;
     }
 }

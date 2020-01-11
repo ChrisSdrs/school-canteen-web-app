@@ -40,11 +40,22 @@ public class User {
     @Column(name = "user_role")
     private String role;
 
+    public Double getDebt() {
+        return debt;
+    }
+
+    public void setDebt(Double debt) {
+        this.debt = debt;
+    }
+
+    @Column(name = "user_debt")
+    private Double debt;
+
     public User(){
 
     }
 
-    public User(Long id, String regn, String grade, String firstName, String lastName, String address, String phone, String email, String username, String password, String role) {
+    public User(Long id, String regn, String grade, String firstName, String lastName, String address, String phone, String email, String username, String password, String role, Double debt) {
         this.id = id;
         this.regn = regn;
         this.grade = grade;
@@ -56,6 +67,7 @@ public class User {
         this.username = username;
         this.password = password;
         this.role = role;
+        this.debt = debt;
     }
 
     public Long getId() {
@@ -157,6 +169,7 @@ public class User {
         sb.append(", username=").append(username);
         sb.append(", password=").append(password);
         sb.append(", role=").append(role);
+        sb.append(", debt=").append(debt);
         sb.append('}');
         return sb.toString();
     }

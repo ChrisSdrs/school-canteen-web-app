@@ -13,7 +13,7 @@
 <#--    <#else>-->
 <#--        <div class="" id="LoginFormDetails">-->
 <#--    </#if>-->
-         <h1 id="login-page-title" class="h3 mb-3 font-weight-normal">School Canteen</h1>
+         <h1 id="login-page-title" class="h3 mb-3 font-weight-normal" style="color: black">School Canteen</h1>
 
 
         <input type="text" class="form-control" name="username" id="username" placeholder="Username" autofocus>

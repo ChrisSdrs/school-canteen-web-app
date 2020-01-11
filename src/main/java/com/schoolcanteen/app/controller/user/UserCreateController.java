@@ -52,66 +52,16 @@ import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
             }
 
             User user = mapper.toUser(userCreateForm);
-            if (isValidUserEmptyFields(user)) {
-                if (isValidUser(user) == "") {
-                    BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-                    String password = user.getPassword();
-                    String encodedPW = encoder.encode(password);
-                    user.setPassword(encodedPW);
-                    userService.createUser(user);
-                    redirectAttrs.addFlashAttribute(ALERT_TYPE, "success");
-                    redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "User Created Successfully!");
-                    return "redirect:/admin/users";
-                } else {
-                    model.addAttribute(USERS_FORM, userCreateForm);
-                    model.addAttribute(USER_CREATE_ERROR, isValidUser(user));
 
-                    return "pages/user_create";
-                }
-            }else{
-                model.addAttribute(USERS_FORM, userCreateForm);
-                model.addAttribute(USER_CREATE_ERROR, "Please fill all fields!");
-                return "pages/user_create";
-            }
-        }
-
-        private String isValidUser(User user) {
-            String result = "";
-            String regn = user.getRegn();
-            String email = user.getEmail();
-            String username = user.getUsername();
-            //User provided is not Valid if any of the ssn,email,username already exists
-            if (!userService.findByRegn(regn).isEmpty()) {
-                result += "Registration Number Already Exists. ";
-            }
-            if (!userService.findByEmail(email).isEmpty()) {
-                result += "Email Already Exists. ";
-            }
-            if (!userService.findByUsername(username).isEmpty()) {
-                result += "Username Already Exists. ";
-            }
-
-            return result;
-
-
-        }
-
-        private boolean isValidUserEmptyFields(User user){
-            boolean isValid   = true;
-            String regn = user.getRegn();
-            String firstName = user.getFirstName();
-            String lastName = user.getLastName();
-            String address = user.getAddress();
-            String phone = user.getPhone();
-            String email = user.getEmail();
-            String username = user.getUsername();
+            BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
             String password = user.getPassword();
-            String role = user.getRole();
-            if (regn.isEmpty() || email.isEmpty() || firstName.isEmpty() || lastName.isEmpty() || address.isEmpty() || phone.isEmpty() || username.isEmpty() || password == null || role.isEmpty()){
-                isValid = false;
-            }
-
-            return isValid;
+            String encodedPW = encoder.encode(password);
+            user.setPassword(encodedPW);
+            userService.createUser(user);
+            redirectAttrs.addFlashAttribute(ALERT_TYPE, "success");
+            redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "User Created Successfully!");
+            return "redirect:/admin/users";
         }
+
 
 }
