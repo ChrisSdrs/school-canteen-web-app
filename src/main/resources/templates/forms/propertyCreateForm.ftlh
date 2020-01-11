@@ -2,19 +2,16 @@
 
 <form action="/admin/properties/create" id="propertyVal" name="propertyForm" method="POST">
 
+
     <div class="mb-3">
-        <label for="pin">Property Identification Number</label>
-        <@spring.bind "propertyForm.pin"/>
-        <input type="text" class="form-control" name="pin" id="pin" placeholder="Pin">
-        <#list spring.status.errorMessages as error>
-            <span>${error}</span>
-        </#list>
+        <label for="owner">Student's Registration Number</label>
+        <input type="text" class="form-control" name="regn" id="regn" placeholder="Registration Number">
     </div>
 
     <div class="mb-3">
-        <label for="address">Address</label>
-        <@spring.bind "propertyForm.address"/>
-        <input type="text" class="form-control" name="address" id="address" placeholder="Address">
+        <label for="description">Description</label>
+        <@spring.bind "repairForm.description"/>
+        <textarea class="form-control" name="description" id="description" placeholder="Description" rows="4" cols="50"><#if repairForm.description?has_content>${repairForm.description}</#if></textarea>
         <#list spring.status.errorMessages as error>
             <span>${error}</span>
         </#list>
@@ -29,28 +26,8 @@
         </#list>
     </div>
 
-    <div class="mb-3">
-        <label for="type">Property Type</label>
-        <@spring.bind "propertyForm.type"/>
-        <select class="custom-select d-block w-100" name="type" id="type" required="">
-            <option value="" class="first-select-label" selected>Choose Property Type</option>
-            <option>Detached house</option>
-            <option>Maisonette</option>
-            <option>Apartment building</option>
-        </select>
-        <#list spring.status.errorMessages as error>
-            <span>${error}</span>
-        </#list>
-    </div>
 
-    <div class="mb-3">
-        <label for="owner">Owner's SSN</label>
-        <@spring.bind "propertyForm.owner"/>
-        <input type="text" class="form-control" name="owner" id="owner" placeholder="Owner's Social Security Number">
-        <#list spring.status.errorMessages as error>
-            <span>${error}</span>
-        </#list>
-    </div>
+
 
     <#if propertyCreateError?has_content>
         <div><p class="error">

@@ -80,12 +80,12 @@
         </#list>
     </div>
 
-    <div class="mb-3" ghost>
+    <div class="mb-3 ghost">
         <label for="role">Role</label>
         <input type="text" class="form-control" name="role" id="role" value="Student">
     </div>
 
-    <div class="mb-3" ghost>
+    <div class="mb-3 ghost">
         <label for="role">Sum Due</label>
         <input type="text" class="form-control" name="debt" id="debt" value="0">
     </div>
