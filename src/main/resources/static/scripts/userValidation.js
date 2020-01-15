@@ -25,6 +25,9 @@ jQuery(function ($){
                 required: true,
                 digits: true
             },
+            debt:{
+                required: true
+            },
             username:{
                 required: true
             },
@@ -59,6 +62,9 @@ jQuery(function ($){
             phone:{
                 required: "Enter phone",
                 digits: "Invalid phone number, phone number type must be number"
+            },
+            debt:{
+                required: "Enter sum due"
             },
             username:{
                 required: "Enter username"

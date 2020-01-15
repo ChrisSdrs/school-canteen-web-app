@@ -74,12 +74,12 @@
                 ">
                     <a class="nav-link" href="/admin/users/create">
                         <img src="https://img.icons8.com/ios-filled/50/000000/add-user-male.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Create User</div>
+                        <div class="sidebar-link-text">Create Student</div>
                     </a>
                 </li>
 
                 <li class="">
-                    <div class="sidebar-title">Products</div>
+                    <div class="sidebar-title">Orders</div>
                 </li>
 
                 <li class="nav-item
@@ -91,7 +91,7 @@
                 ">
                     <a class="nav-link" href="/admin/orders">
                         <img src="https://img.icons8.com/ios-filled/50/000000/real-estate.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Orders</div>
+                        <div class="sidebar-link-text">All Orders</div>
                     </a>
                 </li>
 
@@ -100,7 +100,7 @@
                     page == "Order-Edit"><li class="nav-item nav-users active">
                         <div class="nav-link" >
                             <img src="https://img.icons8.com/ios-filled/50/000000/pencil-tip.png" class="nav-link-icon">
-                            <div class="sidebar-link-text">Edit Product</div>
+                            <div class="sidebar-link-text">Edit Order</div>
                         </div>
                     </li>
                     </#if>
@@ -117,7 +117,7 @@
                 ">
                     <a class="nav-link" href="/admin/orders/create">
                         <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Create Product</div>
+                        <div class="sidebar-link-text">Create Order</div>
                     </a>
                 </li>
             </#if>
