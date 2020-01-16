@@ -9,5 +9,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 
     List<Order> findAll();
 
+    List<Order> findByRegn(String regn);
+
     Order save(Order order);
 }

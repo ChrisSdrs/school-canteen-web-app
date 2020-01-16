@@ -2,20 +2,7 @@
     <div class="sidebar-sticky">
         <ul class="nav flex-column">
 
-            <li class="nav-item
-                <#if page?has_content>
-                    <#if
-                page == "Home">active
-                    </#if>
-                </#if>
 
-            ">
-                <a class="nav-link" href="/home">
-                    <img src="https://img.icons8.com/wired/64/000000/speed.png" class="nav-link-icon">
-
-                    <div class="sidebar-link-text">Home</div>
-                </a>
-            </li>
         <#if userRole?has_content>
             <#if
         userRole == "Admin">
@@ -122,29 +109,27 @@
                 </li>
             </#if>
         </#if>
-        <#if userRole?has_content>
-                    <#if
-                userRole == "Student">
+<#--        <#if userRole?has_content>-->
+<#--                    <#if-->
+<#--                userRole == "Student">-->
 
-                 <li class="" style="margin-top: 60px;">
-                    <div class="coming-soon-holder">
-                        <img class="coming-soon" src="https://freepngimg.com/download/coming_soon/7-2-coming-soon-png-picture.png">
-                    </div>
-                 </li>
+<#--                        <li class="nav-item-->
+<#--                <#if page?has_content>-->
+<#--                    <#if-->
+<#--                            page == "Home">active-->
+<#--                    </#if>-->
+<#--                </#if>-->
 
-<#--                <li class="">-->
-<#--                    <img src="https://img.icons8.com/ios/50/000000/calendar-plus.png" class="nav-link-icon">-->
-<#--                    <div class="sidebar-link-text">Arrange Repair</div>-->
-<#--                </li>-->
+<#--            ">-->
+<#--                            <a class="nav-link" href="/home">-->
+<#--                                <img src="https://img.icons8.com/wired/64/000000/speed.png" class="nav-link-icon">-->
 
-<#--                <li class="">-->
-<#--                    <img src="https://img.icons8.com/ios-filled/50/000000/add-to-inbox.png" class="nav-link-icon">-->
-<#--                    <div class="sidebar-link-text">Add Purchases</div>-->
-<#--                </li>-->
+<#--                                <div class="sidebar-link-text">Home</div>-->
+<#--                            </a>-->
+<#--                        </li>-->
 
-
-            </#if>
-        </#if>
+<#--            </#if>-->
+<#--        </#if>-->
         </ul>
 
 

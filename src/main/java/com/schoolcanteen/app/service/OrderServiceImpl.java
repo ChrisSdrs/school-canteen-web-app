@@ -28,6 +28,14 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public List<OrderModel> findByRegn(String regn) {
+        return orderRepository.findByRegn(regn)
+                .stream()
+                .map(order -> mapper.mapToOrderModel(order))
+                .collect(Collectors.toList());
+    }
+
+    @Override
     public Order createOrder(Order order) {
         return orderRepository.save(order);
     }
