@@ -11,6 +11,8 @@ public interface OrderService {
 
     List<OrderModel> findAll();
 
+    List<OrderModel> findByRegn(String regn);
+
     Order createOrder(Order order);
 
     void deleteById(Long id);

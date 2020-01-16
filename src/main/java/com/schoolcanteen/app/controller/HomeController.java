@@ -30,7 +30,7 @@ public class HomeController {
         if (role.matches("Admin")){
             return "redirect:/admin";
         }
-        else if(role.matches("Owner")){
+        else if(role.matches("Student")){
             return "redirect:/user";
         }
         return "redirect:/login";

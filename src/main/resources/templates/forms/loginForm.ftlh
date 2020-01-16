@@ -1,18 +1,10 @@
 <form action="/login" id="login" class="form-signin" name="loginForm" method="POST">
     <div class="LoginLogoDiv">
-<#--    <#if loginAuthentication?has_content>-->
-<#--        <img class="login-logo animate-logo" id="login-logo" src="https://scontent.fath4-2.fna.fbcdn.net/v/t1.15752-9/78728043_575638229919166_1445498838633676800_n.png?_nc_cat=101&_nc_ohc=xTCMwCSDKEcAQmYV0spxNg2bFIM-jf8iEvXl1ZncDIiX9yhU-Newi4ikA&_nc_ht=scontent.fath4-2.fna&oh=cf38ecb577d38884bef70986311d7665&oe=5E710346" alt="" width="72" height="72">-->
 
-<#--    <#else>-->
-<#--        <img class="login-logo" id="login-logo" src="https://scontent.fath4-2.fna.fbcdn.net/v/t1.15752-9/78728043_575638229919166_1445498838633676800_n.png?_nc_cat=101&_nc_ohc=xTCMwCSDKEcAQmYV0spxNg2bFIM-jf8iEvXl1ZncDIiX9yhU-Newi4ikA&_nc_ht=scontent.fath4-2.fna&oh=cf38ecb577d38884bef70986311d7665&oe=5E710346" alt="" width="72" height="72">-->
-<#--    </#if>-->
-
-<#--    </div>-->
-<#--    <#if loginAuthentication?has_content>-->
-<#--       <div class="animate-details" id="LoginFormDetails">-->
-<#--    <#else>-->
-<#--        <div class="" id="LoginFormDetails">-->
-<#--    </#if>-->
+        <img src="https://img.icons8.com/officel/100/000000/shop.png" alt="" style="
+    padding-left: 100px;
+    padding-bottom: 30px;
+">
          <h1 id="login-page-title" class="h3 mb-3 font-weight-normal" style="color: black">School Canteen</h1>
 
 
@@ -33,8 +25,21 @@
         <div style="margin-top: 30px;">
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </div>
-        <p class="mt-5 mb-3" style="text-align: center;">© 2019-2020</p>
     </div>
+
+<#--        <h3 class="text-center text-info">Login</h3>-->
+<#--        <div class="form-group">-->
+<#--            <label for="username" class="text-info">Username:</label><br>-->
+<#--            <input type="text" name="username" id="username" class="form-control">-->
+<#--        </div>-->
+<#--        <div class="form-group">-->
+<#--            <label for="password" class="text-info">Password:</label><br>-->
+<#--            <input type="text" name="password" id="password" class="form-control">-->
+<#--        </div>-->
+<#--        <div class="form-group">-->
+<#--            <input type="submit" name="submit" class="btn btn-info btn-md" value="Submit">-->
+<#--        </div>-->
+
 </form>
 
 

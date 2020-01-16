@@ -4,20 +4,20 @@
   padding: 6px 20px 3px 20px;
 }
 .sidebar .active .nav-link {
-  color: #007bff;
+  color: #00b77c;
 }
 .sidebar .active .nav-link .feather {
   color: inherit;
 }
 .sidebar{
     box-shadow: initial !important;
-    padding: 66px 20px 20px 20px;
+    padding: 57px 20px 20px 20px;
     bottom: -21px;
     left: -21px;
 }
 .sidebar-sticky{
-    background: #e8e8e8;
-    padding: 10px 0px 10px 20px;
+    background: #ff009940;
+    padding: 0px 0px 0px 0px;
     height:100%;
 }
 
@@ -81,7 +81,7 @@ li.nav-item:hover {
     margin: 15px 0px;
     width: 200px;
 }
-/* Repair-User view tables*/
+/* Order-User view tables*/
 .Edit-Delete{
   text-align: center;
 }
@@ -116,39 +116,39 @@ select{
 }
 
 
-/* Alerts */
-[data-notify="progressbar"] {
-    margin-bottom: 0px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 5px;
-}
+/*!* Alerts *!*/
+/*[data-notify="progressbar"] {*/
+/*    margin-bottom: 0px;*/
+/*    position: absolute;*/
+/*    bottom: 0px;*/
+/*    left: 0px;*/
+/*    width: 100%;*/
+/*    height: 5px;*/
+/*}*/
 
-.alertContainer {
-    display: inline-block;
-    position: fixed;
-    top: 75px;
-    right: 40px;
-    opacity:0;
-    transition: 0.2s linear;
-    z-index: -1;
-}
-.notify-alert{
-    margin:0;
-    transition: 0.2s linear;
-}
-.alert-timer {
-    width: 100%;
-    height: 2px;
-    transition: 4.5s linear;
-    background: lime;
-}
+/*.alertContainer {*/
+/*    display: inline-block;*/
+/*    position: fixed;*/
+/*    top: 75px;*/
+/*    right: 40px;*/
+/*    opacity:0;*/
+/*    transition: 0.2s linear;*/
+/*    z-index: -1;*/
+/*}*/
+/*.notify-alert{*/
+/*    margin:0;*/
+/*    transition: 0.2s linear;*/
+/*}*/
+/*.alert-timer {*/
+/*    width: 100%;*/
+/*    height: 2px;*/
+/*    transition: 4.5s linear;*/
+/*    background: lime;*/
+/*}*/
 
-.container-fluid{
-    padding-right: 30px;
-}
+/*.container-fluid{*/
+/*    padding-right: 30px;*/
+/*}*/
 /* Main Area */
 main {
     margin: 2px 0px 20px 0;
@@ -161,14 +161,15 @@ main {
 
 /* Nav Bar */
 .navbar-dark{
-    background:#bfbfbf;
+    background:#5896e3;
+    margin-left: -24px;
     padding: 10px 20px !important;
 }
 a.navbar-brand {
     font-size: 25px;
     text-align: center;
     background: rgba(0,0,0,0);
-    color: #fff;
+    color: #00da9e;
     box-shadow: none;
     padding: 0 20px !important;
 }
@@ -177,7 +178,7 @@ a.navbar-brand {
     float:left;
 }
 span.username-text {
-    color: cyan;
+    color: darkblue;
 }
 .navbar-logout-link{
     margin:10px;

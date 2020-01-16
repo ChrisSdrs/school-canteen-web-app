@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Properties</title>
+    <title>Orders</title>
     <#include "../partials/head.ftlh">
 </head>
 <body>
@@ -13,7 +13,7 @@
 <#assign page = "Orders-Create">
 <#include "../partials/main_content_top.ftlh">
 
-<h3 class="mb-3">Create Property</h3>
+<h3 class="mb-3">Create Order</h3>
 <div class="table-responsive">
 
     <#include "../forms/orderCreateForm.ftlh" />
@@ -21,7 +21,7 @@
 
 <#include "../partials/main_content_bottom.ftlh">
 <#include "../partials/scripts.ftlh">
-<script src="/scripts/propertyValidation.js"></script>
+<script src="/scripts/orderValidation.js"></script>
 <script src="/scripts/main.js"></script>
 
 </body>
