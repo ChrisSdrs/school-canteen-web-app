@@ -1,6 +1,6 @@
 <#import "/spring.ftl" as spring />
 
-<form action="/admin/orders/create" id="propertyVal" name="purchaseForm" method="POST">
+<form action="/admin/orders/create" id="orderVal" name="orderForm" method="POST">
 
     <div class="mb-3">
         <label for="regn">Student's Registration Number</label>
@@ -14,7 +14,7 @@
 
     <div class="mb-3">
         <label for="cost">Cost</label>
-        <input type="text" class="form-control" name="Cost" id="Cost" placeholder="Purchase's Cost">
+        <input type="text" class="form-control" name="cost" id="Cost" placeholder="Purchase's Cost">
     </div>
 
     <button class="btn btn-primary btn-lg mt-4" type="submit">Authorize</button>
