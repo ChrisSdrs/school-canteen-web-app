@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 @SpringBootApplication
 public class CanteenApplication implements CommandLineRunner {
 
-	private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+//	private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 	@Autowired
 	private UserController userController;
