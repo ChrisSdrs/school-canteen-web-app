@@ -82,19 +82,6 @@
                     </a>
                 </li>
 
-<#--                <#if page?has_content>-->
-<#--                    <#if-->
-<#--                    page == "Order-Edit"><li class="nav-item nav-users active">-->
-<#--                        <div class="nav-link" >-->
-<#--                            <img src="https://img.icons8.com/ios-filled/50/000000/purchase-order.png" class="nav-link-icon">-->
-<#--                            <div class="sidebar-link-text">Edit Order</div>-->
-<#--                        </div>-->
-<#--                    </li>-->
-<#--                    </#if>-->
-<#--                </#if>-->
-
-
-
                 <li class="nav-item
                     <#if page?has_content>
                         <#if
