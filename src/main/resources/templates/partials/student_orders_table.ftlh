@@ -12,7 +12,7 @@
             <tr>
                 <td> ${order.regn}</td>
                 <td> ${order.description}</td>
-                <td> ${order.cost}</td>
+                <td> ${order.cost} €</td>
             </tr>
         </#list>
     </#if>

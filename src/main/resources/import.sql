@@ -8,6 +8,7 @@
 -- IT IS A Hibernate feature (nothing to do with Spring)
 
 
+--Users
 
 INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('348972198' , 'Elementary 1st Grade', 'John', 'Smith', '1234 Main St, Athens, Greece', 'john.smith@gmail.com', '2101234567', 'john_smith', '$2a$10$WW8sQYAhCoVV6NmP9Npn8.waFXXqtSvPxhtPlsCRcivD8ApZekNkS', 'Student', 2.0);
 
@@ -58,5 +59,44 @@ INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_la
 INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('200067344' , 'Elementary 1st Grade', 'Luke', 'Walker', '1997 Main St, Patras, Greece', 'Luke_w@gmail.com', '2610775431', 'Luke', '$2a$10$ZK5BtuU.IoAOXp6MLErYUOtmSzNl1MEwPNP9aLPR1QGYhjgFdxqoi', 'Student', 0);
 
 INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('744567778' , 'Elementary 1st Grade', 'Madara', 'Uchiha', '1001 Main St, Patras, Greece', 'madara@gmail.com', '2610008744', 'madara', '$2a$10$QjQuqaZJIWTFpiDWjcZsVeyUtj34Y1x67izzjmg6/YGyq5BzVjkwi', 'Student', 0);
+
+
+
+--Orders
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'cheesepie', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita + coca cola', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('384925389', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('384925389', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('328449990', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('328449990', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
+
+INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
 
 INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'tyropita', 2.0 );
