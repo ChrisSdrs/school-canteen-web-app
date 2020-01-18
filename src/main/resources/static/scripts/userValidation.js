@@ -39,7 +39,7 @@ jQuery(function ($){
             }
         },
         messages:{
-            ssn:{
+            regn:{
                 required: "Enter Registration Number",
                 digits: "Invalid Registration Number, R.N. type must be number"
             },

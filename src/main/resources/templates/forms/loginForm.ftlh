@@ -1,10 +1,7 @@
 <form action="/login" id="login" class="form-signin" name="loginForm" method="POST">
     <div class="LoginLogoDiv">
 
-        <img src="https://img.icons8.com/officel/100/000000/shop.png" alt="" style="
-    padding-left: 100px;
-    padding-bottom: 30px;
-">
+        <img src="https://img.icons8.com/officel/100/000000/shop.png" alt="" id="canteen-logo">
          <h1 id="login-page-title" class="h3 mb-3 font-weight-normal" style="color: black">School Canteen</h1>
 
 
