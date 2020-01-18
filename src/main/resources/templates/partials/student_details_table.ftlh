@@ -21,7 +21,7 @@
             <td> ${userDetails.address}</td>
             <td> ${userDetails.email}</td>
             <td> ${userDetails.phone}</td>
-            <td> ${userDetails.debt}</td>
+            <td> ${userDetails.debt} €</td>
         </tr>
     </#if>
     </tbody>
