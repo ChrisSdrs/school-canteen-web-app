@@ -45,7 +45,7 @@ public class OrderController {
     }
 
     @GetMapping(value = "/admin/orders/search")
-    public String searchProperty(Model model) {
+    public String searchOrder(Model model) {
 
         return "pages/order_search";
     }

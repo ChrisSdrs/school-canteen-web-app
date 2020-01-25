@@ -11,7 +11,7 @@ body {
 
 #username{
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 body {
@@ -57,8 +57,9 @@ body {
 }
 .form-signin input[type="password"] {
     margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    margin-top: 10px;
+    border-radius: 3px;
+
 }
 
 #canteen-logo {

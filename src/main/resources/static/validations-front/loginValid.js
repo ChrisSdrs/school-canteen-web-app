@@ -10,7 +10,10 @@ jQuery(function ($){
         },
         messages: {
             username: {
-                required: 'Please enter your username'
+                required: 'Please enter your username',
+                password: {
+                    required: 'Please enter your password'
+                }
             }
         }
     });
