@@ -25,10 +25,9 @@ import static com.schoolcanteen.app.utils.GlobalAttributes.ALERT_TYPE;
 
 
         @PostMapping(value = "/admin/users/{id}/delete")
-        public String deleteUser(@PathVariable Long id, RedirectAttributes redirectAttrs) {
+        public String deleteUser(@PathVariable Long id) {
             userService.deleteById(id);
-            redirectAttrs.addFlashAttribute(ALERT_TYPE, "info");
-            redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "User Deleted successfully!");
+
             return "redirect:/admin/users";
         }
 
@@ -41,10 +40,8 @@ import static com.schoolcanteen.app.utils.GlobalAttributes.ALERT_TYPE;
         }
 
         @PostMapping(value = "/admin/users/edit")
-        public String editUser(UserModel userModel, RedirectAttributes redirectAttrs) {
+        public String editUser(UserModel userModel) {
             userService.updateUser(userModel);
-            redirectAttrs.addFlashAttribute(ALERT_TYPE, "success");
-            redirectAttrs.addFlashAttribute(ALERT_MESSAGE, "User Updated successfully!");
 
             return "redirect:/admin/users";
         }
