@@ -30,8 +30,8 @@
             <option value="High School 1st Grade">1st Grade</option>
             <option value="High School 2nd Grade">2nd Grade</option>
             <option value="High School 3rd Grade">3rd Grade</option>
-            <option value="High School IA">IA</option>
-            <option value="High School IB">IB</option>
+            <option value="High School IA">IB Year 1</option>
+            <option value="High School IB">IB Year 2</option>
         </select>
 
     </div>

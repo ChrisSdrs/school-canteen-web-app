@@ -31,8 +31,8 @@
             <option value="High School 1st Grade" <#if user.grade == "High School 1st Grade"> selected </#if>>1st Grade</option>
             <option value="High School 2nd Grade" <#if user.grade == "High School 2nd Grade"> selected </#if>>2nd Grade</option>
             <option value="High School 3rd Grade" <#if user.grade == "High School 3rd Grade"> selected </#if>>3rd Grade</option>
-            <option value="High School IA" <#if user.grade == "High School IA"> selected </#if>>IA</option>
-            <option value="High School IB" <#if user.grade == "High School IB"> selected </#if>>IB</option>
+            <option value="High School IB Year 1" <#if user.grade == "High School IB Year 1"> selected </#if>>IB Year 1</option>
+            <option value="High School IB Year 2" <#if user.grade == "High School IB Year 2"> selected </#if>>IB Year 2</option>
         </select>
     </div>
 
