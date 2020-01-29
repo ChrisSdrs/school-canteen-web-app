@@ -4,6 +4,7 @@
     <tr>
         <th>#</th>
         <th>Student's Registration Number</th>
+        <th>Date</th>
         <th>Description</th>
         <th>Cost</th>
         <th>Remove</th>
@@ -13,6 +14,7 @@
         <#list orders as order>
             <tr data-id="${order.id}">
                 <td> ${order.id}</td>
+                <td> ${order.date}</td>
                 <td> ${order.regn}</td>
                 <td> ${order.description}</td>
                 <td> ${order.cost} €</td>

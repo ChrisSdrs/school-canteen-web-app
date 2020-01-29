@@ -11,6 +11,7 @@ public class OrderFormToOrderMapper {
         Order order = new Order();
         order.setId(orderForm.getId());
         order.setRegn(orderForm.getRegn());
+        order.setDate(orderForm.getDate());
         order.setDescription(orderForm.getDescription());
         order.setCost(orderForm.getCost());
         return order;

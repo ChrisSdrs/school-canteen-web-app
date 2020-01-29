@@ -1,10 +1,17 @@
 package com.schoolcanteen.app.forms;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.time.LocalDate;
+
 public class OrderForm {
 
     private Long id;
 
     private String regn;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate date;
 
     private String description;
 
@@ -13,8 +20,9 @@ public class OrderForm {
     public OrderForm() {
     }
 
-    public OrderForm(String regn, String description, Double cost) {
+    public OrderForm(String regn, LocalDate date, String description, Double cost) {
         this.regn = regn;
+        this.date = date;
         this.description = description;
         this.cost = cost;
     }
@@ -34,6 +42,10 @@ public class OrderForm {
     public void setRegn(String regn) {
         this.regn = regn;
     }
+
+    public LocalDate getDate() { return date; }
+
+    public void setDate(LocalDate date) { this.date = date; }
 
     public String getDescription() {
         return description;

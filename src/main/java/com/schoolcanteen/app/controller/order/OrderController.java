@@ -37,7 +37,7 @@ public class OrderController {
 
 
     @GetMapping(value = "/admin/orders")
-    public String properties(Model model) {
+    public String orders(Model model) {
 
         List<OrderModel> orders = orderService.findAll();
         model.addAttribute(ORDERS, orders);
@@ -47,25 +47,25 @@ public class OrderController {
     @GetMapping(value = "/admin/orders/search")
     public String searchOrder(Model model) {
 
-        return "pages/order_search";
+        return "pages/orders_search";
     }
 
 
     @GetMapping(value = "/admin/orders/create")
-    public String createProperty(Model model) {
+    public String createOrder(Model model) {
 
         model.addAttribute(ORDER_FORM, new OrderForm());
-        return "pages/order_create";
+        return "pages/orders_create";
     }
 
     @PostMapping(value = "/admin/orders/create")
-    public String createProperty(Model model, @Valid @ModelAttribute(ORDER_FORM) OrderForm orderForm) {
+    public String createOrder(Model model, @Valid @ModelAttribute(ORDER_FORM) OrderForm orderForm) {
 
         Order order = mapper.mapToOrderModel(orderForm);
         orderService.createOrder(order);
 
         String regn = order.getRegn();
-        Double purchaseCost = order.getCost();
+        Double orderCost = order.getCost();
         if (!userService.findByRegn(regn).isEmpty()) {
             List<UserModel> studentList = userService.findByRegn(regn);
 
@@ -73,7 +73,7 @@ public class OrderController {
 
             UserModel student = (UserModel) iter.next();
             Double sumDue = student.getDebt();
-            sumDue += purchaseCost;
+            sumDue += orderCost;
             student.setDebt(sumDue);
 
             userService.updateUser(student);

@@ -68,107 +68,107 @@ INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_la
 
 
 --Orders
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'cheese pie + Coca Cola + toast', 3.2 );
+INSERT INTO ORDERS (order_regn, order_date, order_description, order_cost) VALUES ('348972198', '2020-01-29', 'cheese pie + Coca Cola + toast', 3.2 );
 
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'cheese pie + sausage pie', 2.6 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'sausage pie + Coca Cola', 2.4 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('384925389', 'toast', 1.0 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('384925389', 'toast', 1.0 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('324568124', 'sausage pie', 1.4 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('324568124', 'sausage pie', 1.4 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('154480337', 'juice', 0.6 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('154480337', 'chocolate', 2.0 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('909754361', 'sausage pie', 1.4 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('909754361', 'sausage pie', 1.4 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('219812345', 'juice', 0.6 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('219812345', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('469570126', 'sausage pie', 1.4 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('469570126', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('358500986', 'juice', 0.6 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('358500986', 'juice', 0.6 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('129063002', 'spinach pie', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('129063002', 'sandwich', 1.8 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('446906418', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('446906418', 'sandwich', 1.8 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('098542318', 'sandwich', 1.8 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('098542318', 'spinach pie', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907255', 'spinach pie', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907255', 'sandwich', 1.8 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('310819902', 'sandwich', 1.8 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('310819902', 'bagel', 0.7 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('108721781', 'bagel', 0.7 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('108721781', 'chocolate', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('565139567', 'milko', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('565139567', 'milko', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907115', 'bagel', 0.7 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907115', 'bagel', 0.7 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('382392056', 'bagel', 0.7 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('382392056', 'chocolate', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('300212345', 'chocolate', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('300212345', 'chocolate', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('279906336', 'chocolate', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('279906336', 'chocolate', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('007753549', 'milko', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('007753549', 'milko', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('328449990', 'milko', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('328449990', 'milko', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('406223890', 'Coca Cola', 1.0 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('406223890', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('322678904', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('322678904', 'spinach pie', 1.3 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('200067344', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('200067344', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('744567778', 'cheese pie', 1.2 );
-
-INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('744567778', 'cheese pie', 1.2 );
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'cheese pie + sausage pie', 2.6 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'sausage pie + Coca Cola', 2.4 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('384925389', 'toast', 1.0 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('384925389', 'toast', 1.0 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('324568124', 'sausage pie', 1.4 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('324568124', 'sausage pie', 1.4 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('154480337', 'juice', 0.6 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('154480337', 'chocolate', 2.0 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('909754361', 'sausage pie', 1.4 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('909754361', 'sausage pie', 1.4 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('219812345', 'juice', 0.6 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('219812345', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('469570126', 'sausage pie', 1.4 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('469570126', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('358500986', 'juice', 0.6 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('358500986', 'juice', 0.6 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('129063002', 'spinach pie', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('129063002', 'sandwich', 1.8 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('446906418', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('446906418', 'sandwich', 1.8 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('098542318', 'sandwich', 1.8 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('098542318', 'spinach pie', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907255', 'spinach pie', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907255', 'sandwich', 1.8 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('310819902', 'sandwich', 1.8 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('310819902', 'bagel', 0.7 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('108721781', 'bagel', 0.7 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('108721781', 'chocolate', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('565139567', 'milko', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('565139567', 'milko', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907115', 'bagel', 0.7 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907115', 'bagel', 0.7 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('382392056', 'bagel', 0.7 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('382392056', 'chocolate', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('300212345', 'chocolate', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('300212345', 'chocolate', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('279906336', 'chocolate', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('279906336', 'chocolate', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('007753549', 'milko', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('007753549', 'milko', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('328449990', 'milko', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('328449990', 'milko', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('406223890', 'Coca Cola', 1.0 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('406223890', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('322678904', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('322678904', 'spinach pie', 1.3 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('200067344', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('200067344', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('744567778', 'cheese pie', 1.2 );
+--
+-- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('744567778', 'cheese pie', 1.2 );
 

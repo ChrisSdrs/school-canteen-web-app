@@ -8,13 +8,18 @@
     </div>
 
     <div class="mb-3">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" name="date" id="date" placeholder="Purchase Date">
+    </div>
+
+    <div class="mb-3">
         <label for="description">Description</label>
         <textarea class="form-control" name="description" id="description" placeholder="Description" rows="4" cols="50"></textarea>
     </div>
 
     <div class="mb-3">
         <label for="cost">Cost</label>
-        <input type="text" class="form-control" name="cost" id="Cost" placeholder="Purchase's Cost">
+        <input type="text" class="form-control" name="cost" id="cost" placeholder="Purchase Cost">
     </div>
 
     <button class="btn btn-primary btn-lg mt-4" type="submit">Authorize</button>
