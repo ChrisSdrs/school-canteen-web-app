@@ -99,7 +99,7 @@
 
 
                 <li class="">
-                    <div class="sidebar-title">Books</div>
+                    <div class="sidebar-title">Products</div>
                 </li>
 
                 <li class="nav-item

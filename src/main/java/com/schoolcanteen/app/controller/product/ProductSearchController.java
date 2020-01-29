@@ -70,7 +70,7 @@ public class ProductSearchController {
                 return productService.findByProductSerialNumber(productSerialNumber);
             }
             else{
-                return productService.findByProductSerialNumberAndProductName(productSerialNumber,productName);
+                return productService.findByProductSerialNumberAndProductName(productSerialNumber, productName);
             }
         }
     }

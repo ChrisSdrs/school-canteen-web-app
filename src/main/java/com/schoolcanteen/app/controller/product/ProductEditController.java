@@ -21,7 +21,7 @@ public class ProductEditController {
     private ProductService productService;
 
     @PostMapping(value = "/admin/products/{id}/edit")
-    public String editProperty(@PathVariable Long id, Model model) {
+    public String editProduct(@PathVariable Long id, Model model) {
         ProductModel productModel = productService.findById(id).get();
         model.addAttribute(PRODUCT_FORM, new ProductForm());
         model.addAttribute(PRODUCT, productModel);

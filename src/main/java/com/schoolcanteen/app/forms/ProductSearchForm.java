@@ -5,14 +5,6 @@ public class ProductSearchForm {
     String productName;
     String productSerialNumber;
 
-    public ProductSearchForm() {
-    }
-
-    public ProductSearchForm(String productName, String productSerialNumber) {
-        this.productName = productName;
-        this.productSerialNumber = productSerialNumber;
-    }
-
     public String getProductName() {
         return productName;
     }
@@ -28,4 +20,14 @@ public class ProductSearchForm {
     public void setProductSerialNumber(String productSerialNumber) {
         this.productSerialNumber = productSerialNumber;
     }
+
+    public ProductSearchForm() {
+    }
+
+    public ProductSearchForm(String productName, String productSerialNumber) {
+        this.productName = productName;
+        this.productSerialNumber = productSerialNumber;
+    }
 }
+
+

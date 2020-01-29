@@ -56,8 +56,8 @@ public class ProductModel {
     public String toString() {
         final StringBuilder sb = new StringBuilder("Product{");
         sb.append("id=").append(id);
-        sb.append(", productSerialNumber='").append(productSerialNumber);
-        sb.append(", productName='").append(productName);
+        sb.append(", product_serial_number='").append(productSerialNumber);
+        sb.append(", product_name='").append(productName);
         sb.append(", price=").append(price);
         sb.append('}');
 
