@@ -13,8 +13,8 @@
     </div>
 
     <div class="mb-3">
-        <label for="description">Description</label>
-        <textarea class="form-control" name="description" id="description" placeholder="Description" rows="4" cols="50"></textarea>
+        <label for="productName">Product</label>
+        <input type="text" class="form-control" name="productName" id="productName" placeholder="Product">
     </div>
 
     <div class="mb-3">

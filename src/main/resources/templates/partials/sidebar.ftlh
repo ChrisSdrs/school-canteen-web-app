@@ -61,9 +61,52 @@
                 ">
                     <a class="nav-link" href="/admin/users/create">
                         <img src="https://img.icons8.com/ios-filled/50/000000/add-user-male.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Create Student</div>
+                        <div class="sidebar-link-text">Add Student</div>
                     </a>
                 </li>
+
+                <li class="">
+                    <div class="sidebar-title">Products</div>
+                </li>
+
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Products">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/products">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/purchase-order.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">Product List</div>
+                    </a>
+                </li>
+
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Products-Search">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/products/search">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/search-property.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">Search Product</div>
+                    </a>
+                </li>
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Products-Create">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/products/create">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/create-order.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">Add Product</div>
+                    </a>
+                </li>
+
 
                 <li class="">
                     <div class="sidebar-title">Orders</div>
@@ -77,7 +120,7 @@
                     </#if>
                 ">
                     <a class="nav-link" href="/admin/orders">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/purchase-order.png" class="nav-link-icon">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/moleskine.png" class="nav-link-icon">
                         <div class="sidebar-link-text">All Orders</div>
                     </a>
                 </li>
@@ -91,9 +134,11 @@
                 ">
                     <a class="nav-link" href="/admin/orders/create">
                         <img src="https://img.icons8.com/ios-filled/50/000000/cash-register.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Create Order</div>
+                        <div class="sidebar-link-text">Add Order</div>
                     </a>
                 </li>
+
+
             </#if>
         </#if>
         </ul>

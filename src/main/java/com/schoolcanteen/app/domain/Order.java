@@ -19,8 +19,8 @@ public class Order {
     @Column(name = "order_date")
     private LocalDate date;
 
-    @Column(name = "order_description")
-    private String description;
+    @Column(name = "products_name")
+    private String productName;
 
     @Column(name = "order_cost")
     private Double cost;
@@ -28,10 +28,10 @@ public class Order {
     public Order() {
     }
 
-    public Order(String regn, LocalDate date, String description, Double cost) {
+    public Order(String regn, LocalDate date, String productName, Double cost) {
         this.regn = regn;
         this.date = date;
-        this.description = description;
+        this.productName = productName;
         this.cost = cost;
     }
 
@@ -55,13 +55,9 @@ public class Order {
 
     public void setDate(LocalDate date) { this.date = date; }
 
-    public String getDescription() {
-        return description;
-    }
+    public String getProductName() { return productName; }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    public void setProductName(String productName) { this.productName = productName; }
 
     public Double getCost() {
         return cost;

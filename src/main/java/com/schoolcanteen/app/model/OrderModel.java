@@ -10,17 +10,17 @@ public class OrderModel {
 
     private LocalDate date;
 
-    private String description;
+    private String productName;
 
     private Double cost;
 
     public OrderModel() {
     }
 
-    public OrderModel(String regn, LocalDate date, String description, Double cost) {
+    public OrderModel(String regn, LocalDate date, String productName, Double cost) {
         this.regn = regn;
         this.date = date;
-        this.description = description;
+        this.productName = productName;
         this.cost = cost;
     }
 
@@ -44,13 +44,9 @@ public class OrderModel {
 
     public void setDate(LocalDate date) { this.date = date; }
 
-    public String getDescription() {
-        return description;
-    }
+    public String getProductName() { return productName; }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    public void setProductName(String productName) { this.productName = productName; }
 
     public Double getCost() {
         return cost;

@@ -12,7 +12,7 @@ public class OrderFormToOrderMapper {
         order.setId(orderForm.getId());
         order.setRegn(orderForm.getRegn());
         order.setDate(orderForm.getDate());
-        order.setDescription(orderForm.getDescription());
+        order.setProductName(orderForm.getProductName());
         order.setCost(orderForm.getCost());
         return order;
 

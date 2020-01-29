@@ -10,19 +10,19 @@
 
 --Users
 
-INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('348972198' , 'Elementary 1st Grade', 'John', 'Smith', '1234 Main St, Athens, Greece', 'john.smith@gmail.com', '2101234567', 'john_smith', '$2a$10$WW8sQYAhCoVV6NmP9Npn8.waFXXqtSvPxhtPlsCRcivD8ApZekNkS', 'Student', 9.4);
+INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('348972198' , 'Elementary 1st Grade', 'John', 'Smith', '1234 Main St, Athens, Greece', 'john.smith@gmail.com', '2101234567', 'john_smith', '$2a$10$WW8sQYAhCoVV6NmP9Npn8.waFXXqtSvPxhtPlsCRcivD8ApZekNkS', 'Student', 5.45);
 
-INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('384925389' , 'Elementary 1st Grade', 'Jason', 'Wayne', '2278 Main St, Athens, Greece', 'j.wayne@gmail.com', '2105589001', 'j_wayne', '$2a$10$21Z7l0vYZUpNL9/JEtInEuVm7CyLzP8mJFPeH7JLe.SCYN7Ck9fVq', 'Student', 2);
+INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('384925389' , 'Elementary 1st Grade', 'Jason', 'Wayne', '2278 Main St, Athens, Greece', 'j.wayne@gmail.com', '2105589001', 'j_wayne', '$2a$10$21Z7l0vYZUpNL9/JEtInEuVm7CyLzP8mJFPeH7JLe.SCYN7Ck9fVq', 'Student', 3.1);
 
 INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('556878932' , 'Elementary 2nd Grade', 'Luke', 'Bolt', '5779 Main St, Athens, Greece', 'L.B@gmail.com', '2104478970', 'admin', '$2a$10$WW8sQYAhCoVV6NmP9Npn8.waFXXqtSvPxhtPlsCRcivD8ApZekNkS', 'Admin', 0);
 
-INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('154480337' , 'Elementary 2nd Grade', 'Alex', 'Tomas', '5779 Main St, Athens, Greece', 'L.B@gmail.com', '2104478970', 'tomas', '$2a$10$WW8sQYAhCoVV6NmP9Npn8.waFXXqtSvPxhtPlsCRcivD8ApZekNkS', 'Student', 2.6);
+INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('154480337' , 'Elementary 2nd Grade', 'Alex', 'Tomas', '5779 Main St, Athens, Greece', 'L.B@gmail.com', '2104478970', 'tomas', '$2a$10$WW8sQYAhCoVV6NmP9Npn8.waFXXqtSvPxhtPlsCRcivD8ApZekNkS', 'Student', 2.15);
 
-INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('909754361' , 'Elementary 3rd Grade', 'Mary', 'Johnson', '9902 Main St, Athens, Greece', 'mary.johnson@gmail.com', '2102044452', 'm_johnson', '$2a$10$GXwXrQkw3HRkmvXoVrHNQ.Lyb/ypASl7doAqrbAkEIQyLp.6t5HJO', 'Student', 2.8);
+INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('909754361' , 'Elementary 3rd Grade', 'Mary', 'Johnson', '9902 Main St, Athens, Greece', 'mary.johnson@gmail.com', '2102044452', 'm_johnson', '$2a$10$GXwXrQkw3HRkmvXoVrHNQ.Lyb/ypASl7doAqrbAkEIQyLp.6t5HJO', 'Student', 2.55);
 
-INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('219812345' , 'Elementary 3rd Grade', 'Thomas', 'Robles', '8761 Main St, Athens, Greece', 'T.robles@gmail.com', '2107709532', 't_robles', '$2a$10$rqxIPM5e6ag2Nfv.WB9MZeqlZH51spJYZHtIBRy7t6Jm2SJzAemMu', 'Student', 2.8);
+INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('219812345' , 'Elementary 3rd Grade', 'Thomas', 'Robles', '8761 Main St, Athens, Greece', 'T.robles@gmail.com', '2107709532', 't_robles', '$2a$10$rqxIPM5e6ag2Nfv.WB9MZeqlZH51spJYZHtIBRy7t6Jm2SJzAemMu', 'Student', 2.6);
 
-INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('469570126' , 'Elementary 4th Grade', 'Philip', 'Anderson', '9012 Main St, Athens, Greece', 'philip.a@gmail.com', '2610436799', 'philip_a', '$2a$10$h1yvxn9etIlRaP5HA0.HgeLCs9uh0eccGn8/GPYyLgk5BIFIiMbaS', 'Student', 2.6);
+INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('469570126' , 'Elementary 4th Grade', 'Philip', 'Anderson', '9012 Main St, Athens, Greece', 'philip.a@gmail.com', '2610436799', 'philip_a', '$2a$10$h1yvxn9etIlRaP5HA0.HgeLCs9uh0eccGn8/GPYyLgk5BIFIiMbaS', 'Student', 3.55);
 
 INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_last_name, user_address, user_email, user_phone, user_username, user_password, user_role, user_debt) VALUES ('358500986' , 'Elementary 4th Grade', 'Socrates', 'Rondulescu', '9902 Main St, Athens, Greece', 'socrates.r@gmail.com', '2610990512', 'socrates_ron', '$2a$10$kFblueaaWbQzw5t47C7Bn.y0hu3gSmPsM9X8AfKpYgZQUTHGnFD0i', 'Student', 1.2);
 
@@ -66,109 +66,91 @@ INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_la
 
 
 
+--Products
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('578615', 'cheese pie', 1.2 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('253369', 'sausage pie', 1.35 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('996235', 'sandwich', 1.85 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('201560', 'milko', 1.3 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('356245', 'coca cola', 1.7 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('958246', 'toast', 0.9 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('475124', 'orange juice', 1 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('845258', 'apple juice', 1 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('302121', 'water', 0.5 );
+
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('985674', 'yogurt', 1.25 );
+
+
+
+
 
 --Orders
-INSERT INTO ORDERS (order_regn, order_date, order_description, order_cost) VALUES ('348972198', '2020-01-29', 'cheese pie + Coca Cola + toast', 3.2 );
 
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'cheese pie + sausage pie', 2.6 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('348972198', 'sausage pie + Coca Cola', 2.4 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('384925389', 'toast', 1.0 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('384925389', 'toast', 1.0 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('324568124', 'sausage pie', 1.4 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('324568124', 'sausage pie', 1.4 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('154480337', 'juice', 0.6 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('154480337', 'chocolate', 2.0 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('909754361', 'sausage pie', 1.4 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('909754361', 'sausage pie', 1.4 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('219812345', 'juice', 0.6 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('219812345', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('469570126', 'sausage pie', 1.4 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('469570126', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('358500986', 'juice', 0.6 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('358500986', 'juice', 0.6 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('129063002', 'spinach pie', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('129063002', 'sandwich', 1.8 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('446906418', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('446906418', 'sandwich', 1.8 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('098542318', 'sandwich', 1.8 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('098542318', 'spinach pie', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907255', 'spinach pie', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907255', 'sandwich', 1.8 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('310819902', 'sandwich', 1.8 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('310819902', 'bagel', 0.7 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('108721781', 'bagel', 0.7 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('108721781', 'chocolate', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('565139567', 'milko', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('565139567', 'milko', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907115', 'bagel', 0.7 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('638907115', 'bagel', 0.7 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('382392056', 'bagel', 0.7 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('382392056', 'chocolate', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('300212345', 'chocolate', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('300212345', 'chocolate', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('279906336', 'chocolate', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('279906336', 'chocolate', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('007753549', 'milko', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('007753549', 'milko', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('328449990', 'milko', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('328449990', 'milko', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('406223890', 'Coca Cola', 1.0 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('406223890', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('322678904', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('322678904', 'spinach pie', 1.3 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('200067344', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('200067344', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('744567778', 'cheese pie', 1.2 );
---
--- INSERT INTO ORDERS (order_regn, order_description, order_cost) VALUES ('744567778', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('946752810', '2020-01-28', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('098542318', '2020-01-28', 'coca cola', 1.7 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('129063002', '2020-01-28', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('446906418', '2020-01-28', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('638907115', '2020-01-28', 'water', 0.5 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('638907255', '2020-01-28', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('310819902', '2020-01-28', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('382392056', '2020-01-28', 'coca cola', 1.7 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('348972198', '2020-01-28', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('565139567', '2020-01-28', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('322678904', '2020-01-28', 'water', 0.5 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('007753549', '2020-01-28', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('300212345', '2020-01-28', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('794628778', '2020-01-28', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('108721781', '2020-01-28', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('406223890', '2020-01-28', 'water', 0.5 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('279906336', '2020-01-28', 'coca cola', 1.7 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('328449990', '2020-01-28', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('200067344', '2020-01-28', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('154480337', '2020-01-28', 'toast', 0.9 );
+
+
+
+
+
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('348972198', '2020-01-29', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('384925389', '2020-01-29', 'yogurt', 1.25 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('384925389', '2020-01-29', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('154480337', '2020-01-29', 'yogurt', 1.25 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('909754361', '2020-01-29', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('909754361', '2020-01-29', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('219812345', '2020-01-29', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('219812345', '2020-01-29', 'yogurt', 1.25 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('469570126', '2020-01-29', 'coca cola', 1.7 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('469570126', '2020-01-29', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('358500986', '2020-01-29', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('358500986', '2020-01-29', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('129063002', '2020-01-29', 'toast', 0.9 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('446906418', '2020-01-29', 'yogurt', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('098542318', '2020-01-29', 'toast', 0.9 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('638907255', '2020-01-29', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('310819902', '2020-01-29', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('108721781', '2020-01-29', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('565139567', '2020-01-29', 'orange juice', 1 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('638907115', '2020-01-29', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('382392056', '2020-01-29', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('300212345', '2020-01-29', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('279906336', '2020-01-29', 'toast', 0.9 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('007753549', '2020-01-29', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('328449990', '2020-01-29', 'coca cola', 1.7 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('406223890', '2020-01-29', 'orange juice', 1 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('322678904', '2020-01-29', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('200067344', '2020-01-29', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('794628778', '2020-01-29', 'orange juice', 1 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('324568124', '2020-01-29', 'yogurt', 1.25 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('324568124', '2020-01-28', 'sandwich', 1.85 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('946752810', '2020-01-29', 'cheese pie', 1.2 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('348972198', '2020-01-29', 'sausage pie', 1.35 );
+INSERT INTO ORDERS (order_regn, order_date, products_name, order_cost) VALUES ('348972198', '2020-01-29', 'coca cola', 1.7 );
 

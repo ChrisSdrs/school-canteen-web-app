@@ -13,17 +13,17 @@ public class OrderForm {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
-    private String description;
+    private String productName;
 
     private Double cost;
 
     public OrderForm() {
     }
 
-    public OrderForm(String regn, LocalDate date, String description, Double cost) {
+    public OrderForm(String regn, LocalDate date, String productName, Double cost) {
         this.regn = regn;
         this.date = date;
-        this.description = description;
+        this.productName = productName;
         this.cost = cost;
     }
 
@@ -47,13 +47,9 @@ public class OrderForm {
 
     public void setDate(LocalDate date) { this.date = date; }
 
-    public String getDescription() {
-        return description;
-    }
+    public String getProductName() { return productName; }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    public void setProductName(String productName) { this.productName = productName; }
 
     public Double getCost() {
         return cost;
