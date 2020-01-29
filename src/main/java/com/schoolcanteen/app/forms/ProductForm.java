@@ -5,12 +5,12 @@ public class ProductForm {
     private Long id;
     private String productSerialNumber;
     private String productName;
-    private double price;
+    private String price;
 
     public ProductForm() {
     }
 
-    public ProductForm(Long id, String productSerialNumber, String productName, double price) {
+    public ProductForm(Long id, String productSerialNumber, String productName, String price) {
         this.id = id;
         this.productSerialNumber = productSerialNumber;
         this.productName = productName;
@@ -41,11 +41,11 @@ public class ProductForm {
         this.productName = productName;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }

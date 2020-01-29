@@ -94,6 +94,67 @@
                         <div class="sidebar-link-text">Create Order</div>
                     </a>
                 </li>
+
+
+
+
+                <li class="">
+                    <div class="sidebar-title">Books</div>
+                </li>
+
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Products">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/products">
+                        <div class="sidebar-link-text">All Products</div>
+                    </a>
+                </li>
+
+                <#if page?has_content>
+                    <#if
+                    page == "Products-Edit"><li class="nav-item nav-users active">
+                        <div class="nav-link" >
+                            <div class="sidebar-link-text">Edit Book</div>
+                        </div>
+                    </li>
+                    </#if>
+                </#if>
+
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Products-Search">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/products/search">
+                        <div class="sidebar-link-text">Search Book</div>
+                    </a>
+                </li>
+
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Products-Create">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/products/create">
+                        <div class="sidebar-link-text">Create Book</div>
+                    </a>
+                </li>
+
+
+
+
+
+
+
+
             </#if>
         </#if>
         </ul>

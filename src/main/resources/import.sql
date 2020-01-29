@@ -66,6 +66,12 @@ INSERT INTO USER (user_registration_number, user_grade, user_first_name, user_la
 
 
 
+--products
+INSERT INTO PRODUCTS (product_serial_number, product_name, product_price) VALUES ('123456', 'cheese pie', 1.2 );
+
+
+
+
 
 --Orders
 INSERT INTO ORDERS (order_regn, order_date, order_description, order_cost) VALUES ('348972198', '2020-01-29', 'cheese pie + Coca Cola + toast', 3.2 );

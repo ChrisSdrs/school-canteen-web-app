@@ -1,6 +1,7 @@
 package com.schoolcanteen.app.mappers;
 
 import com.schoolcanteen.app.domain.Product;
+import com.schoolcanteen.app.model.ProductModel;
 import org.springframework.stereotype.Component;
 
 @Component

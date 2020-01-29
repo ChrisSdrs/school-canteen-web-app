@@ -6,14 +6,14 @@ public class ProductModel {
     private Long id;
     private String productSerialNumber;
     private String productName;
-    private double price;
+    private String price;
 
 
 
     public ProductModel() {
     }
 
-    public ProductModel(Long id, String productSerialNumber, String productName, double price) {
+    public ProductModel(Long id, String productSerialNumber, String productName, String price) {
         this.id = id;
         this.productSerialNumber = productSerialNumber;
         this.productName = productName;
@@ -44,11 +44,11 @@ public class ProductModel {
         this.productName = productName;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -57,7 +57,7 @@ public class ProductModel {
         final StringBuilder sb = new StringBuilder("Product{");
         sb.append("id=").append(id);
         sb.append(", productSerialNumber='").append(productSerialNumber);
-        sb.append(", productNameame='").append(productName);
+        sb.append(", productName='").append(productName);
         sb.append(", price=").append(price);
         sb.append('}');
 

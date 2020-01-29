@@ -73,8 +73,8 @@ public class ProductServiceImpl implements ProductService {
 
 
     @Override
-    public List<ProductModel> findByProductSerialNumberAndProductName(String productSerialNumber, String product) {
-        return productRepository.findByProductSerialNumberAndProductName(productSerialNumber, product)
+    public List<ProductModel> findByProductSerialNumberAndProductName(String productSerialNumber, String productName) {
+        return productRepository.findByProductSerialNumberAndProductName(productSerialNumber, productName)
                 .stream()
                 .map(product -> mapper.mapToProductModel(product))
                 .collect(Collectors.toList());

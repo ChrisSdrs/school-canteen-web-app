@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "Product")
+@Table(name = "Products")
 public class Product {
 
     @Id
@@ -23,14 +23,14 @@ public class Product {
 
     @Column(name = "product_price")
     @DateTimeFormat
-    private double price;
+    private String price;
 
 
 
     public Product() {
     }
 
-    public Product(String productSerialNumber, String productName, double price) {
+    public Product(String productSerialNumber, String productName, String price) {
         this.productSerialNumber = productSerialNumber;
         this.productName = productName;
         this.price = price;
@@ -56,15 +56,13 @@ public class Product {
         return productName;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
+    public void setProductName(String productName) { this.productName = productName; }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 }
