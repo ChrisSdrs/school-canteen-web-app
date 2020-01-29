@@ -61,42 +61,9 @@
                 ">
                     <a class="nav-link" href="/admin/users/create">
                         <img src="https://img.icons8.com/ios-filled/50/000000/add-user-male.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Create Student</div>
+                        <div class="sidebar-link-text">Add Student</div>
                     </a>
                 </li>
-
-                <li class="">
-                    <div class="sidebar-title">Orders</div>
-                </li>
-
-                <li class="nav-item
-                    <#if page?has_content>
-                        <#if
-                    page == "Orders">active
-                        </#if>
-                    </#if>
-                ">
-                    <a class="nav-link" href="/admin/orders">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/purchase-order.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">All Orders</div>
-                    </a>
-                </li>
-
-                <li class="nav-item
-                    <#if page?has_content>
-                        <#if
-                    page == "Orders-Create">active
-                        </#if>
-                    </#if>
-                ">
-                    <a class="nav-link" href="/admin/orders/create">
-                        <img src="https://img.icons8.com/ios-filled/50/000000/cash-register.png" class="nav-link-icon">
-                        <div class="sidebar-link-text">Create Order</div>
-                    </a>
-                </li>
-
-
-
 
                 <li class="">
                     <div class="sidebar-title">Products</div>
@@ -110,19 +77,10 @@
                     </#if>
                 ">
                     <a class="nav-link" href="/admin/products">
-                        <div class="sidebar-link-text">All Products</div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/purchase-order.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">Product List</div>
                     </a>
                 </li>
-
-                <#if page?has_content>
-                    <#if
-                    page == "Products-Edit"><li class="nav-item nav-users active">
-                        <div class="nav-link" >
-                            <div class="sidebar-link-text">Edit Book</div>
-                        </div>
-                    </li>
-                    </#if>
-                </#if>
 
                 <li class="nav-item
                     <#if page?has_content>
@@ -132,10 +90,10 @@
                     </#if>
                 ">
                     <a class="nav-link" href="/admin/products/search">
-                        <div class="sidebar-link-text">Search Book</div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/search-property.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">Search Product</div>
                     </a>
                 </li>
-
                 <li class="nav-item
                     <#if page?has_content>
                         <#if
@@ -144,15 +102,41 @@
                     </#if>
                 ">
                     <a class="nav-link" href="/admin/products/create">
-                        <div class="sidebar-link-text">Create Book</div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/create-order.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">Add Product</div>
                     </a>
                 </li>
 
 
+                <li class="">
+                    <div class="sidebar-title">Orders</div>
+                </li>
 
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Orders">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/orders">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/moleskine.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">All Orders</div>
+                    </a>
+                </li>
 
-
-
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Orders-Create">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/orders/create">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/cash-register.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">Add Order</div>
+                    </a>
+                </li>
 
 
             </#if>

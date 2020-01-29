@@ -8,16 +8,15 @@
 </head>
 <body>
 
+<#include "../partials/navbar.ftlh">
 
-<#assign page = "Products-Search">
+
+<#assign page = "Products">
 <#include "../partials/main_content_top.ftlh">
 
-<h3 class="mb-3">Search Product</h3>
+<h3 class="mb-3">Products</h3>
 <div class="table-responsive">
-    <#include "../forms/productSearchForm.ftlh" />
-    <div class="Dynamic-Load">
         <#include "../partials/products_table.ftlh" />
-    </div>
 </div>
 
 <#include "../partials/main_content_bottom.ftlh">

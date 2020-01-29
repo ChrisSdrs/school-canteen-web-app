@@ -8,20 +8,20 @@
 </head>
 <body>
 
+<#include "../partials/navbar.ftlh">
 
 <#assign page = "Products-Search">
 <#include "../partials/main_content_top.ftlh">
 
-<h3 class="mb-3">Search Product</h3>
 <div class="table-responsive">
+    <h3 class="">Search Products</h3>
     <#include "../forms/productSearchForm.ftlh" />
-    <div class="Dynamic-Load">
-        <#include "../partials/products_table.ftlh" />
-    </div>
+    <#include "../partials/products_table.ftlh" />
 </div>
 
 <#include "../partials/main_content_bottom.ftlh">
 <#include "../partials/delete_confirm_modal.ftlh" />
+<script src="/scripts/main.js"></script>
 <#include "../partials/scripts.ftlh">
 </body>
 </html>

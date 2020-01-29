@@ -10,7 +10,7 @@
     </div>
     <div class="mb-3">
         <@spring.bind "productSearchForm.productName"/>
-        <input type="text" class="form-control" name="productName" id="productName" placeholder="Product" value="<#if productSearchForm.productName?has_content>${productSearchForm.productName }</#if>">
+        <input type="text" class="form-control" name="productName" id="productName" placeholder="Product"  value="<#if productSearchForm.productName?has_content>${productSearchForm.productName}</#if>">
         <#list spring.status.errorMessages as error>
             <span>${error}</span>
         </#list>

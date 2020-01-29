@@ -22,7 +22,6 @@ public class Product {
     private String productName;
 
     @Column(name = "product_price")
-    @DateTimeFormat
     private String price;
 
 

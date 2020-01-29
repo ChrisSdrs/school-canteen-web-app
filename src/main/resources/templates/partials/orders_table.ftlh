@@ -3,9 +3,9 @@
     <thead>
     <tr>
         <th>#</th>
-        <th>Student's Registration Number</th>
         <th>Date</th>
-        <th>Description</th>
+        <th>Student's Registration Number</th>
+        <th>Product</th>
         <th>Cost</th>
         <th>Remove</th>
     </tr>
@@ -16,7 +16,7 @@
                 <td> ${order.id}</td>
                 <td> ${order.date}</td>
                 <td> ${order.regn}</td>
-                <td> ${order.description}</td>
+                <td> ${order.productName}</td>
                 <td> ${order.cost} €</td>
                 <td class="Edit-Delete">
                     <button type="button" class="btn btn-link" data-toggle="modal" data-target="#deleteConfirmationModal" data-id="${order.id}" data-link="/admin/orders/${order.id}/delete" >

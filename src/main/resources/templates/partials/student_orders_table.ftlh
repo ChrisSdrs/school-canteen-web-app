@@ -3,7 +3,7 @@
     <thead>
     <tr>
         <th>Registration Number</th>
-        <th>Description</th>
+        <th>Product</th>
         <th>Cost</th>
     </tr>
     </thead><tbody>
@@ -11,7 +11,7 @@
         <#list userOrders as order>
             <tr>
                 <td> ${order.regn}</td>
-                <td> ${order.description}</td>
+                <td> ${order.productName}</td>
                 <td> ${order.cost} €</td>
             </tr>
         </#list>
