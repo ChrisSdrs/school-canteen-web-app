@@ -8,6 +8,9 @@ jQuery(function ($){
              date:{
                 required: true
             },
+             productName:{
+                required: true
+            },
             description:{
                 required: true
             },
@@ -22,6 +25,9 @@ jQuery(function ($){
             },
             date:{
                 required: "Enter Date"
+            },
+            productName:{
+                required: "Enter Product"
             },
             description:{
                 required: "Enter Description"
