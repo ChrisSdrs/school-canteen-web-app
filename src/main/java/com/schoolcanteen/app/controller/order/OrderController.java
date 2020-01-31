@@ -59,8 +59,7 @@ public class OrderController {
         return "pages/orders_create";
     }
 
-//search
-
+//search orders
     @GetMapping(value = "/admin/orders/search")
     public String searchOrders(Model model) {
         model.addAttribute(ORDERS_SEARCH_FORM, new OrderSearchForm());
@@ -128,23 +127,7 @@ public class OrderController {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //create order
     @PostMapping(value = "/admin/orders/create")
     public String createOrder(Model model, @Valid @ModelAttribute(ORDER_FORM) OrderForm orderForm) {
 

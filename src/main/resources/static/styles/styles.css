@@ -77,10 +77,7 @@ li.nav-item:hover {
     float: left;
     position: relative;
 }
-.coming-soon-holder {
-    margin: 15px 0px;
-    width: 200px;
-}
+
 /* Order-User view tables*/
 .Edit-Delete{
   text-align: center;
@@ -115,40 +112,6 @@ select{
   color: initial !important;
 }
 
-
-/*!* Alerts *!*/
-/*[data-notify="progressbar"] {*/
-/*    margin-bottom: 0px;*/
-/*    position: absolute;*/
-/*    bottom: 0px;*/
-/*    left: 0px;*/
-/*    width: 100%;*/
-/*    height: 5px;*/
-/*}*/
-
-/*.alertContainer {*/
-/*    display: inline-block;*/
-/*    position: fixed;*/
-/*    top: 75px;*/
-/*    right: 40px;*/
-/*    opacity:0;*/
-/*    transition: 0.2s linear;*/
-/*    z-index: -1;*/
-/*}*/
-/*.notify-alert{*/
-/*    margin:0;*/
-/*    transition: 0.2s linear;*/
-/*}*/
-/*.alert-timer {*/
-/*    width: 100%;*/
-/*    height: 2px;*/
-/*    transition: 4.5s linear;*/
-/*    background: lime;*/
-/*}*/
-
-/*.container-fluid{*/
-/*    padding-right: 30px;*/
-/*}*/
 /* Main Area */
 main {
     margin: 2px 0px 20px 0;
@@ -191,7 +154,6 @@ img.logout-icon {
     float: right;
     filter: invert(1);
 }
-/* SideBar */
 
 /* General */
 body, nav.sidebar{
@@ -224,3 +186,6 @@ body, nav.sidebar{
     background: #d7d7d7;
 }
 
+.ml-sm-auto, .mx-sm-auto {
+    margin-left: 265px !important;
+}

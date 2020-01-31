@@ -20,7 +20,6 @@
                 ">
                     <a class="nav-link" href="/admin/users">
                         <img src="https://img.icons8.com/ios-filled/50/000000/user-group-man-man.png" class="nav-link-icon">
-
                         <div class="sidebar-link-text">All Students</div>
                     </a>
                 </li>
@@ -132,7 +131,8 @@
                     </#if>
                 ">
                     <a class="nav-link" href="/admin/orders/search">
-                        <div class="sidebar-link-text">Search for order</div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/paid-search.png" class="nav-link-icon">
+                        <div class="sidebar-link-text">Search for Order</div>
                     </a>
                 </li>
 
@@ -148,12 +148,8 @@
                         <div class="sidebar-link-text">Add Order</div>
                     </a>
                 </li>
-
-
             </#if>
         </#if>
         </ul>
-
-
     </div>
 </nav>

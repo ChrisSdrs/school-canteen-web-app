@@ -1,6 +1,6 @@
-<table class="table table-striped table-sm">
+<table class="table table-bordered table-sm">
 
-    <thead>
+    <thead class="thead-dark">
     <tr>
         <th>Registration Number</th>
         <th>Product</th>
