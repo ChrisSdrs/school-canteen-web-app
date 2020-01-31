@@ -55,4 +55,15 @@ public class OrderModel {
     public void setCost(Double cost) {
         this.cost = cost;
     }
+
+    public String toString(){
+        final StringBuilder sb = new StringBuilder("Borrow{");
+        sb.append("id=").append(id);
+        sb.append(", date=").append(date);
+        sb.append(", cost=").append(cost);
+        sb.append(", regn=").append(regn);
+        sb.append(", productName=").append(productName);
+        sb.append('}');
+        return sb.toString();
+    }
 }

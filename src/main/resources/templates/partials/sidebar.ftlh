@@ -124,6 +124,17 @@
                         <div class="sidebar-link-text">All Orders</div>
                     </a>
                 </li>
+                <li class="nav-item
+                    <#if page?has_content>
+                        <#if
+                    page == "Orders-Search">active
+                        </#if>
+                    </#if>
+                ">
+                    <a class="nav-link" href="/admin/orders/search">
+                        <div class="sidebar-link-text">Search for order</div>
+                    </a>
+                </li>
 
                 <li class="nav-item
                     <#if page?has_content>

@@ -2,6 +2,7 @@ package com.schoolcanteen.app.controller.order;
 
 import com.schoolcanteen.app.domain.Order;
 import com.schoolcanteen.app.forms.OrderForm;
+import com.schoolcanteen.app.forms.OrderSearchForm;
 import com.schoolcanteen.app.mappers.OrderFormToOrderMapper;
 import com.schoolcanteen.app.model.OrderModel;
 import com.schoolcanteen.app.model.UserModel;
@@ -10,20 +11,26 @@ import com.schoolcanteen.app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
+import java.time.LocalDate;
 import java.util.Iterator;
 import java.util.List;
+
+import static javax.servlet.RequestDispatcher.ERROR_MESSAGE;
 
 @Controller
 public class OrderController {
 
     private static final String ORDER_FORM = "orderForm";
     private static final String ORDERS = "orders";
+    private static final String ORDERS_SEARCH_FORM = "OrderSearchForm";
+    private static final String ORDER_LIST = "orders";
 
 
     @Autowired
@@ -44,12 +51,6 @@ public class OrderController {
         return "pages/orders_show";
     }
 
-    @GetMapping(value = "/admin/orders/search")
-    public String searchOrder(Model model) {
-
-        return "pages/orders_search";
-    }
-
 
     @GetMapping(value = "/admin/orders/create")
     public String createOrder(Model model) {
@@ -57,6 +58,92 @@ public class OrderController {
         model.addAttribute(ORDER_FORM, new OrderForm());
         return "pages/orders_create";
     }
+
+//search
+
+    @GetMapping(value = "/admin/orders/search")
+    public String searchOrders(Model model) {
+        model.addAttribute(ORDERS_SEARCH_FORM, new OrderSearchForm());
+        return "pages/orders_search";
+    }
+
+    @PostMapping(value = "/admin/orders/search")
+    public String searchOrders(Model model,
+                                @Valid @ModelAttribute(ORDERS_SEARCH_FORM)
+                                        OrderSearchForm orderSearchForm,
+                                BindingResult bindingResult) {
+
+        if (bindingResult.hasErrors()) {
+            //have some error handling here, perhaps add extra error messages to the model
+            model.addAttribute(ERROR_MESSAGE, "an error occurred");
+            return "pages/orders_search";
+        }
+        String regn = orderSearchForm.getRegn();
+        LocalDate dateAfter = orderSearchForm.getDateAfter();
+        LocalDate dateBefore = orderSearchForm.getDateBefore();
+
+        List<OrderModel> orders = getOrdersFromSearch(regn,dateAfter,dateBefore);
+        model.addAttribute(ORDER_LIST, orders);
+        model.addAttribute(ORDERS_SEARCH_FORM, orderSearchForm);
+        return "pages/orders_search_results";
+    }
+
+    private List<OrderModel> getOrdersFromSearch(String regn, LocalDate dateAfter, LocalDate dateBefore){
+        if (regn == ""){
+            if (dateAfter == null){
+                if (dateBefore == null){
+                    return orderService.findAll();
+                }
+                else{
+                    return orderService.findByDateBefore(dateBefore);
+                }
+            }
+            else{
+                if (dateBefore == null){
+                    return orderService.findByDateAfter(dateAfter);
+                }
+                else{
+                    return orderService.findByDateBetween(dateAfter, dateBefore);
+                }
+            }
+        }
+        else{
+            if (dateAfter == null){
+                if (dateBefore == null){
+                    return orderService.findByRegn(regn);
+                }
+                else{
+                    return orderService.findByRegnAndDateBefore(regn, dateBefore);
+                }
+            }
+            else{
+                if (dateBefore == null){
+                    return orderService.findByRegnAndDateAfter(regn, dateAfter);
+                }
+                else{
+                    return orderService.findByRegnAndDateBetween(regn, dateAfter, dateBefore);
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @PostMapping(value = "/admin/orders/create")
     public String createOrder(Model model, @Valid @ModelAttribute(ORDER_FORM) OrderForm orderForm) {
@@ -83,8 +170,6 @@ public class OrderController {
 
 
     }
-
-
 
     @PostMapping(value = "/admin/orders/{id}/delete")
     public String deleteUser(@PathVariable Long id) {
