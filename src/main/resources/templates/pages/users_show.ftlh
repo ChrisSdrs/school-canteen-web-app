@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Users</title>
+    <title>Students</title>
     <#include "../partials/head.ftlh">
 </head>
 <body>

@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Orders</title>
+    <title>Order Create</title>
     <#include "../partials/head.ftlh">
 </head>
 <body>

@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Search product</title>
+    <title>Product Search</title>
     <#include "../partials/head.ftlh">
 </head>
 <body>
@@ -13,7 +13,7 @@
 <#assign page = "Products-Search">
 <#include "../partials/main_content_top.ftlh">
 
-<h3 class="">Search Products</h3>
+<h3 class="">Search products</h3>
 <div class="table-responsive">
     <#include "../forms/productSearchForm.ftlh" />
 </div>

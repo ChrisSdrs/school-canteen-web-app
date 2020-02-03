@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>Users</title>
+    <title>User Create</title>
     <#include "../partials/head.ftlh">
 </head>
 <body>

@@ -1,7 +1,7 @@
 <html>
 <head>
-    <title>User Details</title>
-    <link rel="stylesheet" href="/styles/owner.css">
+    <title>School Canteen App</title>
+    <link rel="stylesheet" href="/styles/student.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js">
     <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/chart.js">
     <#include "../partials/head.ftlh">
@@ -13,7 +13,7 @@
 <#assign page = "Home">
 <#include "../partials/main_content_top.ftlh">
 
-<h3 class="mb-3">User Account</h3>
+<h3 class="mb-3">Student Account</h3>
 <div class="table-responsive">
 
     <h4>My Details</h4>

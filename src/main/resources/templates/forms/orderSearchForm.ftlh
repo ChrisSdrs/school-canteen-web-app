@@ -8,7 +8,8 @@
         <input type="date" class="form-control mr-sm-2" name="dateAfter" id="dateAfter">
     </div>
     <div class="mb-3">
-        <input type="text" class="form-control mr-sm-2" name="regn" id="regn" placeholder="Registration Number" style="margin-top: 55px;">
+        <label for="regn" style="padding-top: 5px;">Student's Registration Number:</label>
+        <input type="text" class="form-control mr-sm-2" name="regn" id="regn" placeholder="Registration Number" >
     </div>
     <button class="btn btn-primary btn-lg mt-4" type="submit">Search</button>
 </form>
