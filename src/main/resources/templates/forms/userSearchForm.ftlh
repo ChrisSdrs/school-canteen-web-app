@@ -2,6 +2,7 @@
 
     <div class="mb-3">
         <@spring.bind "userSearchForm.regn"/>
+        <label for="regn">Student's Registration Number:</label>
         <input type="text" class="form-control" name="regn" id="regn" placeholder="Registration Number" value="<#if userSearchForm.regn?has_content>${userSearchForm.regn}</#if>">
         <#list spring.status.errorMessages as error>
             <span>${error}</span>
@@ -10,6 +11,7 @@
     </div>
     <div class="mb-3">
         <@spring.bind "userSearchForm.email"/>
+        <label for="email">Student's e-mail:</label>
         <input type="text" class="form-control" name="email" id="email" placeholder="e-mail"  value="<#if userSearchForm.email?has_content>${userSearchForm.email}</#if>">
         <#list spring.status.errorMessages as error>
             <span>${error}</span>

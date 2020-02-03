@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Products</title>
+    <title>Product Create</title>
     <#include "../partials/head.ftlh">
 </head>
 <body>

@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Orders</title>
+    <title>Order Search</title>
     <#include "../partials/head.ftlh">
 </head>
 <body>
@@ -14,7 +14,7 @@
 <#include "../partials/main_content_top.ftlh">
 
 <div class="table-responsive">
-    <h3 class="">Search Order</h3>
+    <h3 class="">Search orders</h3>
     <#include "../forms/orderSearchForm.ftlh" />
     <#include "../partials/orders_table.ftlh" />
 </div>

@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Users</title>
+    <title>User Edit</title>
     <#include "../partials/head.ftlh">
 </head>
 <body>
