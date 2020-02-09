@@ -48,7 +48,7 @@ public class OrderServiceImpl implements OrderService {
     public List<OrderModel> findByDateAfter(LocalDate dateAfter) {
         return orderRepository.findByDateAfter(dateAfter)
                 .stream()
-                .map(order -> mapper.mapToOrderModel(order))
+                .map(order -> mapper.mapToOrderModel((Order) order))
                 .collect(Collectors.toList());
     }
 
@@ -61,8 +61,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public List<OrderModel> findByDateBetween(LocalDate dateAfter, LocalDate dateBefore) {
-        return orderRepository.findByDateBetween(dateAfter, dateBefore)
+    public List<OrderModel> findByDateBetween(LocalDate dateUntil, LocalDate dateBefore) {
+        return orderRepository.findByDateBetween(dateUntil, dateBefore)
                 .stream()
                 .map(order -> mapper.mapToOrderModel(order))
                 .collect(Collectors.toList());

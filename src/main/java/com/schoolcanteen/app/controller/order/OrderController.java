@@ -78,49 +78,49 @@ public class OrderController {
             return "pages/orders_search";
         }
         String regn = orderSearchForm.getRegn();
-        LocalDate dateAfter = orderSearchForm.getDateAfter();
-        LocalDate dateBefore = orderSearchForm.getDateBefore();
+        LocalDate dateFrom = orderSearchForm.getDateFrom();
+        LocalDate dateTo = orderSearchForm.getDateTo();
 
-        List<OrderModel> orders = getOrdersFromSearch(regn,dateAfter,dateBefore);
+        List<OrderModel> orders = getOrdersFromSearch(regn,dateFrom,dateTo);
         model.addAttribute(ORDER_LIST, orders);
         model.addAttribute(ORDERS_SEARCH_FORM, orderSearchForm);
         return "pages/orders_search_results";
     }
 
-    private List<OrderModel> getOrdersFromSearch(String regn, LocalDate dateAfter, LocalDate dateBefore){
+    private List<OrderModel> getOrdersFromSearch(String regn, LocalDate dateFrom, LocalDate dateTo){
         if (regn == ""){
-            if (dateAfter == null){
-                if (dateBefore == null){
+            if (dateFrom == null){
+                if (dateTo == null){
                     return orderService.findAll();
                 }
                 else{
-                    return orderService.findByDateBefore(dateBefore);
+                    return orderService.findByDateBefore(dateTo);
                 }
             }
             else{
-                if (dateBefore == null){
-                    return orderService.findByDateAfter(dateAfter);
+                if (dateTo == null){
+                    return orderService.findByDateAfter(dateFrom);
                 }
                 else{
-                    return orderService.findByDateBetween(dateAfter, dateBefore);
+                    return orderService.findByDateBetween(dateFrom, dateTo);
                 }
             }
         }
         else{
-            if (dateAfter == null){
-                if (dateBefore == null){
+            if (dateFrom == null){
+                if (dateTo == null){
                     return orderService.findByRegn(regn);
                 }
                 else{
-                    return orderService.findByRegnAndDateBefore(regn, dateBefore);
+                    return orderService.findByRegnAndDateBefore(regn, dateTo);
                 }
             }
             else{
-                if (dateBefore == null){
-                    return orderService.findByRegnAndDateAfter(regn, dateAfter);
+                if (dateTo == null){
+                    return orderService.findByRegnAndDateAfter(regn, dateFrom);
                 }
                 else{
-                    return orderService.findByRegnAndDateBetween(regn, dateAfter, dateBefore);
+                    return orderService.findByRegnAndDateBetween(regn, dateFrom, dateTo);
                 }
             }
         }

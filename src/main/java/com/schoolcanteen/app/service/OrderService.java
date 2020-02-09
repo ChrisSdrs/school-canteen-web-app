@@ -11,28 +11,28 @@ import java.util.Optional;
 @Service
 public interface OrderService {
 
+    Order createOrder(Order order);
+
+    Order updateOrder(OrderModel orderModel);
+
+    void deleteById(Long id);
+
     Optional<OrderModel> findById(Long id);
 
     List<OrderModel> findAll();
 
     List<OrderModel> findByRegn(String regn);
 
-    Order updateOrder(OrderModel orderModel);
+    List<OrderModel> findByDateAfter(LocalDate date);
 
-    Order createOrder(Order order);
-
-    void deleteById(Long id);
-
-
-    List<OrderModel> findByDateAfter(LocalDate dateAfter);
-
-    List<OrderModel> findByDateBefore(LocalDate dateBefore);
-
-    List<OrderModel> findByDateBetween(LocalDate dateAfter, LocalDate dateBefore);
-
-    List<OrderModel> findByRegnAndDateBefore(String regn, LocalDate dateBefore);
+    List<OrderModel> findByDateBefore(LocalDate date);
 
     List<OrderModel> findByRegnAndDateAfter(String regn, LocalDate dateAfter);
 
-    List<OrderModel> findByRegnAndDateBetween(String regn, LocalDate dateAfter, LocalDate dateBefore);
+    List<OrderModel> findByRegnAndDateBefore(String regn, LocalDate dateBefore);
+
+    List<OrderModel> findByDateBetween(LocalDate dateBefore, LocalDate dateAfter);
+
+    List<OrderModel> findByRegnAndDateBetween(String regn, LocalDate dateBefore, LocalDate dateAfter);
+
 }

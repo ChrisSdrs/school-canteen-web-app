@@ -8,25 +8,25 @@ public class OrderSearchForm {
 
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    LocalDate dateAfter;
+    LocalDate dateFrom;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    LocalDate dateBefore;
+    LocalDate dateTo;
     String regn;
 
-    public LocalDate getDateAfter() {
-        return dateAfter;
+    public LocalDate getDateFrom() {
+        return dateFrom;
     }
 
-    public void setDateAfter(LocalDate dateAfter) {
-        this.dateAfter = dateAfter;
+    public void setDateFrom(LocalDate dateFrom) {
+        this.dateFrom = dateFrom;
     }
 
-    public LocalDate getDateBefore() {
-        return dateBefore;
+    public LocalDate getDateTo() {
+        return dateTo;
     }
 
-    public void setDateBefore(LocalDate dateBefore) {
-        this.dateBefore = dateBefore;
+    public void setDateTo(LocalDate dateTo) {
+        this.dateTo = dateTo;
     }
 
     public String getRegn() {
@@ -40,9 +40,9 @@ public class OrderSearchForm {
     public OrderSearchForm() {
     }
 
-    public OrderSearchForm(LocalDate dateAfter, LocalDate dateBefore, String regn) {
-        this.dateAfter = dateAfter;
-        this.dateBefore = dateBefore;
+    public OrderSearchForm(LocalDate dateFrom, LocalDate dateTo, String regn) {
+        this.dateFrom = dateFrom;
+        this.dateTo = dateTo;
         this.regn = regn;
     }
 }
