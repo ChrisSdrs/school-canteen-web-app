@@ -13,7 +13,7 @@
 <#assign page = "User-Edit">
 <#include "../partials/main_content_top.ftlh">
 
-        <h3 class="mb-3">Edit User ${user.firstName} ${user.lastName}</h3>
+        <h3 class="mb-3">Edit Student: ${user.firstName} ${user.lastName}</h3>
         <div class="table-responsive">
 
             <#include "../forms/userEditForm.ftlh" />
