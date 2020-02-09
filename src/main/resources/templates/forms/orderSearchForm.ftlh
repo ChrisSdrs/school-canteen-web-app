@@ -1,11 +1,11 @@
 <form action="/admin/orders/search" name="orderSearchForm" method="POST">
     <div class="mb-3">
-        <label for="dateBefore">From date:</label>
-        <input type="date" class="form-control mr-sm-2" name="dateBefore" id="dateBefore">
+        <label for="dateFrom">From date:</label>
+        <input type="date" class="form-control mr-sm-2" name="dateFrom" id="dateFrom">
     </div>
     <div class="mb-3">
-        <label for="dateAfter">Until date:</label>
-        <input type="date" class="form-control mr-sm-2" name="dateAfter" id="dateAfter">
+        <label for="dateTo">Until date:</label>
+        <input type="date" class="form-control mr-sm-2" name="dateTo" id="dateTo">
     </div>
     <div class="mb-3">
         <label for="regn" style="padding-top: 5px;">Student's Registration Number:</label>

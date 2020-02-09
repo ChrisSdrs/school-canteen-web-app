@@ -13,16 +13,18 @@
 <#assign page = "Orders-Search">
 <#include "../partials/main_content_top.ftlh">
 
+<h3 class="mb-3">Search orders</h3>
 <div class="table-responsive">
-    <h3 class="">Search orders</h3>
     <#include "../forms/orderSearchForm.ftlh" />
     <#include "../partials/orders_table.ftlh" />
 </div>
 
 <#include "../partials/main_content_bottom.ftlh">
 <#include "../partials/delete_confirm_modal.ftlh" />
-<script src="/scripts/main.js"></script>
 <#include "../partials/scripts.ftlh">
+<script src="/scripts/main.js"></script>
 </body>
 </html>
+
+
 
